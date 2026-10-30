@@ -121,7 +121,7 @@ class SettingsConnectionMatcherImplTest {
     }
 
     private fun getDefaultServerSettingsJson(): String {
-        return "{\"general\":{},\"admin\":{},\"project\":{\"name\":\"Demo project\",\"icon\":\"D\",\"color\":\"#3e9fcc\"}}"
+        return "{\"general\":{},\"admin\":{},\"project\":{\"name\":\"Demo project\",\"icon\":\"D\",\"color\":\"#23769C\"}}"
     }
 
     private fun getServerSettingsJson(url: String): String {

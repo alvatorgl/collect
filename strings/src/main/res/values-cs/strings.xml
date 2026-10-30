@@ -49,8 +49,8 @@
   <string name="storage_runtime_permission_denied_title">Povolení pro ukládání dat</string>
   <string name="storage_runtime_permission_denied_desc">Bez těchto oprávnění nelze přistupovat k formulářům nebo ukládat odpovědi. Opětovně otevřete aplikaci, až budete připraveni je udělit.</string>
   <string name="location_runtime_permissions_denied_title">Oprávnění umístění</string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
-  <string name="location_runtime_permissions_denied_desc">Bez povolení <b>Přesné lokace</b>Collect nemůže zaznamenávat vaši polohu. Zkuste to znovu, až budete připraveni povolení udělit.</string>
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
+  <string name="location_runtime_permissions_denied_desc">Bez povolení <b>Přesné lokace</b>Survey Record nemůže zaznamenávat vaši polohu. Zkuste to znovu, až budete připraveni povolení udělit.</string>
   <string name="camera_runtime_permission_denied_title">Oprávnění k fotoaparátu</string>
   <string name="camera_runtime_permission_denied_desc">Bez tohoto povolení nelze přistupovat k fotoaparátu. Zkuste to prosím znovu, když jste připraveni jej udělit.</string>
   <string name="record_audio_runtime_permission_denied_title">Oprávnění k nahrávání zvuku</string>
@@ -493,7 +493,7 @@
   <string name="enable_gps">Zapnout GPS</string>
   <string name="gps_enable_message">GPS je ve vašem zařízení deaktivováno. Chcete ho povolit?</string>
   <string name="geo_clear_warning">Funkce již vytvořena. Chcete tuto funkci vymazat?</string>
-  <string name="geo_exit_warning">Zrušit změny a vrátit se do ODK?</string>
+  <string name="geo_exit_warning">Zrušit změny a vrátit se do Survey Record?</string>
   <string name="polygon_validator">Musí mít alespoň 3 body pro vytvoření polygonu</string>
   <string name="polyline_validator">Musí mít alespoň 2 body k vytvoření křivky</string>
   <string name="clear">Vymazat</string>
@@ -597,7 +597,7 @@
   <string name="form_updates_available">Dostupné aktualizace formuláře</string>
   <string name="newer_version_of_a_form_info">Toto je aktualizace formuláře, který máte</string>
   <string name="form_update_error">Aktualizace formuláře se nezdařila</string>
-  <string name="form_update_error_massage">Otevřete ODK Collect a zkuste to znovu</string>
+  <string name="form_update_error_massage">Otevřete Survey Record a zkuste to znovu</string>
   <!--Text for notification shown while syncing forms with the server-->
   <string name="form_update_notification_title">Synchronizace formulářů</string>
   <string name="load_remote_form_error">Stažení seznamu formulářů se nezdařilo</string>
@@ -612,9 +612,9 @@
     ##############################################-->
   <string name="report_to_project_lead">Pokud problém přetrvává, nahlaste jej osobě, která vás požádala o sběr dat.</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="unreachable_error">Collect nemůže kontaktovat server na %s. Zadali jste adresu URL správně?</string>
+  <string name="unreachable_error">Survey Record nemůže kontaktovat server na %s. Zadali jste adresu URL správně?</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="security_error">Collect se nemůže bezpečně připojit k serveru na %s. Zadali jste URL správně?</string>
+  <string name="security_error">Survey Record se nemůže bezpečně připojit k serveru na %s. Zadali jste URL správně?</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
   <string name="server_error">Server %1$s vrátil stavový kód %2$s.</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
@@ -848,8 +848,8 @@
      # ABOUT
      ##############################################-->
   <string name="about_preferences">Více o….</string>
-  <string name="tell_your_friends">Sdílet ODK Collect</string>
-  <string name="tell_your_friends_msg">Shromažďují vaši kolegové data jen na papíře? Sdílejte s nimi ODK Collect.</string>
+  <string name="tell_your_friends">Sdílet Survey Record</string>
+  <string name="tell_your_friends_msg">Shromažďují vaši kolegové data jen na papíře? Sdílejte s nimi Survey Record.</string>
   <string name="leave_a_review">Nechte recenzi v Play Store</string>
   <string name="leave_a_review_msg">Vaše recenze (snad pozitivní) zvyšuje viditelnost aplikace v Play Store.</string>
   <string name="odk_website">Navštivte web ODK</string>
@@ -901,7 +901,7 @@
   <string name="fs_delete_media_path_if_file_error">Nemohu vymazat \'%s\'. Vymažte soubor ručně a stáhněte dotazník znovu.</string>
   <string name="fs_create_media_folder_error">Nemohu vytvořit adresář pro mediální soubory \'%s\'.</string>
   <string name="fs_file_copy_error">Nezdařilo se nakopírovat \'%1$s\' přes \'%2$s\'. Důvod: %3$s </string>
-  <string name="select_odk_shortcut">Vybrat ODK zástupce</string>
+  <string name="select_odk_shortcut">Vybrat Survey Record zástupce</string>
   <string name="background_audio_help">Tento formulář zaznamenává zvuk z mikrofonu zařízení.\n\nMůžete použít indikátor hlasitosti a ujistit se, že je mikrofon dostatečně blízko zvuku, který potřebujete zaznamenat.\n\nChcete-li zastavit nahrávání, ukončete tento formulář.\n\nDalší informace získáte od osoby, která vás požádala o shromažďování údajů.</string>
   <string name="loading">Načítání…</string>
   <!--##############################################
@@ -971,9 +971,9 @@
     # Form opening errors
     ##############################################-->
   <!--Error shown when a user tries to open a form that's in a different project-->
-  <string name="wrong_project_selected_for_form">Chcete-li otevřít tento formulář, musíte nejprve otevřít ODK Collect a přepnout na projekt, který jej obsahuje.</string>
+  <string name="wrong_project_selected_for_form">Chcete-li otevřít tento formulář, musíte nejprve otevřít Survey Record a přepnout na projekt, který jej obsahuje.</string>
   <!--Error shown when a user tries to open a form when there are no projects-->
-  <string name="app_not_configured">ODK Collect nebyl nakonfigurován. Zkuste otevřít ODK Collect a nakonfigurovat jej.\n\nPokud jste klepli na zástupce, možná jej budete muset po konfiguraci ODK Collect znovu vytvořit.</string>
+  <string name="app_not_configured">Survey Record nebyl nakonfigurován. Zkuste otevřít Survey Record a nakonfigurovat jej.\n\nPokud jste klepli na zástupce, možná jej budete muset po konfiguraci Survey Record znovu vytvořit.</string>
   <!--Displayed when form filling is attempted to be launched by intent but the intent URI mime type is unknown-->
   <string name="unrecognized_uri">Nerozpoznaný identifikátor URI: %s</string>
   <!--Displayed when form filling is attempted to be launched by intent but the intent URI is incorrect-->
@@ -997,7 +997,7 @@
   <!--Label for entity that has been created offline and is not on the server yet-->
   <string name="offline">Offline</string>
   <!--Error message displayed when a user opens a form with an unrecognized entity version-->
-  <string name="unrecognized_entity_version">Tento formulář není v této verzi ODK Collect podporován. Upgradujte prosím aplikaci Collect. Pokud máte tento problém i nadále, nahlaste ho osobě, která vás požádala o sběr dat. \n\nVerze specifikace formulářových entit: %s</string>
+  <string name="unrecognized_entity_version">Tento formulář není v této verzi Survey Record podporován. Upgradujte prosím aplikaci Survey Record. Pokud máte tento problém i nadále, nahlaste ho osobě, která vás požádala o sběr dat. \n\nVerze specifikace formulářových entit: %s</string>
   <!--##############################################
     # Crash handling
     ##############################################-->
@@ -1016,14 +1016,14 @@
   <string name="dev_tools">Vývojářské nástroje</string>
   <!--Option provided in the Developer tools settings to force an application crash-->
   <string name="crash_app">Aplikace Crash</string>
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <string name="crash_app_summary">Vynucení nezachycené výjimky, která způsobí pád aplikace</string>
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <string name="debug_filters_summary">Zobrazit informace o ladění pro provádění výrazů filtru během zadávání formuláře</string>
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <string name="use_zxing_for_barcode_scanning">Vrátit se ke staršímu skeneru čárových kódů</string>
   <string name="permission_dialog_title">O oprávněních</string>
-  <string name="permission_dialog_text">Budete požádáni o povolení přístupu ODK Collect k níže uvedeným funkcím, pokud je chcete používat, vyberte možnost \"povolit\".</string>
+  <string name="permission_dialog_text">Budete požádáni o povolení přístupu Survey Record k níže uvedeným funkcím, pokud je chcete používat, vyberte možnost \"povolit\".</string>
   <string name="notifications">Oznámení</string>
   <string name="required_for_notifications">Vyžaduje se pro zobrazení aktualizací při stahování, aktualizaci a odesílání formulářů.</string>
   <!--##############################################

@@ -4,22 +4,32 @@
     <color name="colorOnPrimary">@color/colorOnPrimaryDark</color>
     <color name="colorPrimaryContainer">@color/colorPrimaryContainerDark</color>
     <color name="colorOnPrimaryContainer">@color/colorOnPrimaryContainerDark</color>
-    <color name="colorPrimaryInverse">#006689</color>
+    <color name="colorPrimaryInverse">@color/colorPrimaryLight</color>
+    <color name="colorSecondary">@color/colorSecondaryDark</color>
+    <color name="colorOnSecondary">@color/colorOnSecondaryDark</color>
+    <color name="colorSecondaryContainer">@color/colorSecondaryContainerDark</color>
+    <color name="colorOnSecondaryContainer">@color/colorOnSecondaryContainerDark</color>
+    <color name="colorTertiary">@color/colorTertiaryDark</color>
+    <color name="colorOnTertiary">@color/colorOnTertiaryDark</color>
+    <color name="colorTertiaryContainer">@color/colorTertiaryContainerDark</color>
+    <color name="colorOnTertiaryContainer">@color/colorOnTertiaryContainerDark</color>
 
-    <color name="colorError">#ba1a1a</color>
-    <!-- <color name="colorOnError">#ffffff</color> -->
+    <color name="colorError">@color/colorErrorDark</color>
+    <color name="colorOnError">@color/colorOnErrorDark</color>
 
+    <color name="colorBackground">@color/colorBackgroundDark</color>
     <color name="colorSurface">@color/colorSurfaceDark</color>
-    <color name="colorSurfaceVariant">#40484c</color>
+    <color name="colorSurfaceVariant">@color/colorSurfaceVariantDark</color>
     <color name="colorOnSurface">@color/colorOnSurfaceDark</color>
-    <color name="colorOnSurfaceVariant">#c0c8cd</color>
-    <color name="colorSurfaceContainerLowest">#001117</color>
-    <color name="colorSurfaceContainerLow">#293134</color>
-    <color name="colorSurfaceContainer">#293134</color>
-    <color name="colorSurfaceContainerHigh">#293134</color>
+    <color name="colorOnSurfaceVariant">@color/colorOnSurfaceVariantDark</color>
+    <color name="colorOutline">@color/colorOutlineDark</color>
+    <color name="colorSurfaceContainerLowest">@color/colorSurfaceContainerLowestDark</color>
+    <color name="colorSurfaceContainerLow">@color/colorSurfaceContainerLowDark</color>
+    <color name="colorSurfaceContainer">@color/colorSurfaceContainerDark</color>
+    <color name="colorSurfaceContainerHigh">@color/colorSurfaceContainerHighDark</color>
     <color name="colorSurfaceContainerHighest">@color/colorSurfaceContainerHighestDark</color>
-    <color name="colorSurfaceInverse">#BFE9FF</color>
-    <color name="colorOnSurfaceInverse">#001F2A</color>
+    <color name="colorSurfaceInverse">@color/colorSurfaceLight</color>
+    <color name="colorOnSurfaceInverse">@color/colorOnSurfaceLight</color>
 
     <bool name="lightStatusBar">false</bool>
 </resources>

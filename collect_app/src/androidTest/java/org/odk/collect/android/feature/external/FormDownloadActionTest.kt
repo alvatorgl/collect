@@ -9,6 +9,7 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.RuleChain
 import org.junit.runner.RunWith
+import org.odk.collect.android.BuildConfig
 import org.odk.collect.android.external.FormsContract
 import org.odk.collect.android.support.TestDependencies
 import org.odk.collect.android.support.pages.AppClosedPage
@@ -38,7 +39,7 @@ class FormDownloadActionTest {
         testDependencies.server.addForm("One Question", "one_question", "1", "one-question.xml")
         testDependencies.server.addForm("Two Question", "two_question", "1", "two-question.xml")
 
-        val intent = Intent("org.odk.collect.android.FORM_DOWNLOAD")
+        val intent = Intent(BuildConfig.APPLICATION_ID + ".FORM_DOWNLOAD")
         intent.type = FormsContract.CONTENT_TYPE
         intent.putExtra(FORM_IDS, arrayOf("one_question"))
 
@@ -70,7 +71,7 @@ class FormDownloadActionTest {
         testDependencies.server.setCredentials("Pete", "meyre")
         testDependencies.server.addForm("One Question", "one_question", "1", "one-question.xml")
 
-        val intent = Intent("org.odk.collect.android.FORM_DOWNLOAD")
+        val intent = Intent(BuildConfig.APPLICATION_ID + ".FORM_DOWNLOAD")
         intent.type = FormsContract.CONTENT_TYPE
         intent.putExtra(FORM_IDS, arrayOf("one_question"))
         intent.putExtra(URL, testDependencies.server.url)
@@ -104,7 +105,7 @@ class FormDownloadActionTest {
         testDependencies.server.setCredentials("Pete", "meyre")
         testDependencies.server.addForm("One Question", "one_question", "1", "one-question.xml")
 
-        val intent = Intent("org.odk.collect.android.FORM_DOWNLOAD")
+        val intent = Intent(BuildConfig.APPLICATION_ID + ".FORM_DOWNLOAD")
         intent.type = FormsContract.CONTENT_TYPE
         intent.putExtra(FORM_IDS, arrayOf("one_question"))
         intent.putExtra(URL, testDependencies.server.url)

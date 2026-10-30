@@ -6,6 +6,7 @@ import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.odk.collect.android.BuildConfig
 import org.odk.collect.forms.Form
 import org.odk.collect.forms.instances.Instance
 import org.odk.collect.formstest.InMemInstancesRepository
@@ -43,7 +44,10 @@ class BlankFormListItemTest {
         assertThat(blankFormListItem.geometryPath, `is`(form.geometryXpath))
         assertThat(blankFormListItem.dateOfCreation, `is`(form.date))
         assertThat(blankFormListItem.dateOfLastUsage, `is`(3L))
-        assertThat(blankFormListItem.contentUri, `is`(Uri.parse("content://org.odk.collect.android.provider.odk.forms/forms/1?projectId=DEMO")))
+        assertThat(
+            blankFormListItem.contentUri,
+            `is`(Uri.parse("content://${BuildConfig.APPLICATION_ID}.provider.forms/forms/1?projectId=DEMO"))
+        )
     }
 
     @Test

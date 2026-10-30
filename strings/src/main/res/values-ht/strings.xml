@@ -46,13 +46,13 @@
   <string name="search">Rechèch</string>
   <string name="not_granted_permission">Aktivite w ap eseye kòmanse a mande yon pèmisyon ke w poko bay.</string>
   <string name="storage_runtime_permission_denied_title">Pèmisyon pou stokaj</string>
-  <string name="storage_runtime_permission_denied_desc">San pèmisyon sa yo, Collect pa p kapab gen aksè ak fom yo oubyen stoke repons yo. Relouvri aplikasyon an lè w pare pou bay pèmisyon yo.</string>
+  <string name="storage_runtime_permission_denied_desc">San pèmisyon sa yo, Survey Record pa p kapab gen aksè ak fom yo oubyen stoke repons yo. Relouvri aplikasyon an lè w pare pou bay pèmisyon yo.</string>
   <string name="location_runtime_permissions_denied_title">Pèmisyon pou lokalizasyon</string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
   <string name="camera_runtime_permission_denied_title">Pèmisyon pou kamera</string>
-  <string name="camera_runtime_permission_denied_desc">San pèmisyon sa Collect pa p ka aksede a Kamera a. Tanpri eseye ankò lè pare pou w bay li.</string>
+  <string name="camera_runtime_permission_denied_desc">San pèmisyon sa Survey Record pa p ka aksede a Kamera a. Tanpri eseye ankò lè pare pou w bay li.</string>
   <string name="record_audio_runtime_permission_denied_title">Pèmisyon pou anrejistre son</string>
-  <string name="record_audio_runtime_permission_denied_desc">San pèmisyon sa Collect pa p ka aksede a mikro a. Tanpri eseye ankò lè pare pou w bay li.</string>
+  <string name="record_audio_runtime_permission_denied_desc">San pèmisyon sa Survey Record pa p ka aksede a mikro a. Tanpri eseye ankò lè pare pou w bay li.</string>
   <!--##############################################
     # FILL BLANK FORM
     ##############################################-->
@@ -436,7 +436,7 @@
     ##############################################-->
   <!--Section title in settings-->
   <!--Option provided in the Developer tools settings to force an application crash-->
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <!--##############################################

@@ -38,13 +38,13 @@
   <string name="search">Shakisha</string>
   <string name="not_granted_permission">Igikorwa mugerageza gutangira kirasaba uruhushya, kandi ntirwatanzwe</string>
   <string name="storage_runtime_permission_denied_title">Uburenganzira ku bubiko</string>
-  <string name="storage_runtime_permission_denied_desc">Udafite ubwo burenganzira Collect ntabwo ishobora kwemera form cg ibike amakuru. Ongera ufungure iyo application mugihe ufite ubwo burenganzira</string>
+  <string name="storage_runtime_permission_denied_desc">Udafite ubwo burenganzira Survey Record ntabwo ishobora kwemera form cg ibike amakuru. Ongera ufungure iyo application mugihe ufite ubwo burenganzira</string>
   <string name="location_runtime_permissions_denied_title">Uburenganzira bwokwerekana location </string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
   <string name="camera_runtime_permission_denied_title">Ha uruhushya Camera</string>
   <string name="camera_runtime_permission_denied_desc">Utatanze uruhushya porogaramu ntibasha gukoresha Camera bityo ongera kugerageza nyuma yuko uhaye uruhushya porogaramu</string>
   <string name="record_audio_runtime_permission_denied_title">Rikodinga uburenganzira bwa odiyo </string>
-  <string name="record_audio_runtime_permission_denied_desc">Udafite uburenganzira Collect ntishobora kwemera konte. Mwakongera igihe mwaba mubonye ubwo burenganzira. </string>
+  <string name="record_audio_runtime_permission_denied_desc">Udafite uburenganzira Survey Record ntishobora kwemera konte. Mwakongera igihe mwaba mubonye ubwo burenganzira. </string>
   <!--##############################################
     # FILL BLANK FORM
     ##############################################-->
@@ -407,7 +407,7 @@ N\'ukomea guhura n\'iki kibazo, wakigeza kuwa gusabye gukusanya  amakuru.</strin
   <string name="enable_gps">Emeza GPS</string>
   <string name="gps_enable_message">GPS irafunze kuri tabuleti yawe. urifuza kuyifungura?</string>
   <string name="geo_clear_warning">Byamaze gutungana. Murifuza kubisiba? </string>
-  <string name="geo_exit_warning">Siba ibyari byamaze guhindurwa ubundi usubire kuri porogaramu ya ODK</string>
+  <string name="geo_exit_warning">Siba ibyari byamaze guhindurwa ubundi usubire kuri porogaramu ya Survey Record</string>
   <string name="polygon_validator">Bigomba kuba bifite byibuze ibintu 3 kugirango bikore Polygon </string>
   <string name="polyline_validator">Bigomba kugira ibintu byibuze 2 kugirango bikore Polyline </string>
   <string name="clear">Siba </string>
@@ -498,9 +498,9 @@ N\'ukomea guhura n\'iki kibazo, wakigeza kuwa gusabye gukusanya  amakuru.</strin
     ##############################################-->
   <string name="report_to_project_lead">Mu gihe ukomeje guhura niki kibazo, baza uwagusabye gutanga aya makuru</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="unreachable_error">Collect ntibasha kugera kuri seriveri kuri %s. Ese winjijemo linki neza</string>
+  <string name="unreachable_error">Survey Record ntibasha kugera kuri seriveri kuri %s. Ese winjijemo linki neza</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="security_error">Collect ntibasha guhura na seriveri kuri %s. Ese winjijemo linki neza</string>
+  <string name="security_error">Survey Record ntibasha guhura na seriveri kuri %s. Ese winjijemo linki neza</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
   <string name="server_error">Seriveri %1$s irerekana kode %2$s.</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
@@ -705,8 +705,8 @@ N\'ukomea guhura n\'iki kibazo, wakigeza kuwa gusabye gukusanya  amakuru.</strin
      # ABOUT
      ##############################################-->
   <string name="about_preferences">Kuri</string>
-  <string name="tell_your_friends">Gusangiza ODK Collect</string>
-  <string name="tell_your_friends_msg">Abo mukorana baracyakusanyiriza amakuru mu mpapuro? Bahe ODK collect</string>
+  <string name="tell_your_friends">Gusangiza Survey Record</string>
+  <string name="tell_your_friends_msg">Abo mukorana baracyakusanyiriza amakuru mu mpapuro? Bahe Survey Record collect</string>
   <string name="leave_a_review">Tanga igitekerezo cyawe muri play store</string>
   <string name="leave_a_review_msg">Igitekerezo cyawe(twizera cyiza) kiratuma application irushaho kugaragara cyane muri Play Store</string>
   <string name="odk_website">Sura urubuga rwa ODK</string>
@@ -755,7 +755,7 @@ N\'ukomea guhura n\'iki kibazo, wakigeza kuwa gusabye gukusanya  amakuru.</strin
   <string name="fs_create_media_folder_error">Ntabubiko mbumbe bubasha gukorwa \' %s \'.</string>
   <string name="fs_file_copy_error">Wikora copy ya %1$s kuri %2$s .
 Impamvu: %3$s</string>
-  <string name="select_odk_shortcut">Hitamo inzira z\'ubusamo za ODK</string>
+  <string name="select_odk_shortcut">Hitamo inzira z\'ubusamo za Survey Record</string>
   <string name="background_audio_help">Iyi fomu yandika amajwi ya mikoro yigikoresho cyawe. \ n\n Ushobora gukoresha igipimo cyerekana amajwi kugirango umenye neza ko mikoro yegeranye bihagije nijwi ukeneye gufata amajwi. n\n\ Guhagarika gufata amajwi nyamuneka sohoka muri iyi fomu.n\n\ Kubindi bisobanuro nyamuneka hamagara umuntu wagusabye gukusanya amakuru.</string>
   <!--##############################################
      # Projects
@@ -843,7 +843,7 @@ Birashoboka ko ari zimwe zashyizwemo mubihe bitandukanye cgw ziturutse ahatanduk
     ##############################################-->
   <!--Section title in settings-->
   <!--Option provided in the Developer tools settings to force an application crash-->
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <!--##############################################

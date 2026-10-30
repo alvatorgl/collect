@@ -69,7 +69,7 @@ class MediaUtilsTest {
                 file
             )
         ).thenReturn(
-            Uri.parse("content://org.odk.collect.android.provider/external_files/Android/data/org.odk.collect.android/files/image.png")
+            Uri.parse("content://co.glocation.surveyrecord.provider/external_files/Android/data/co.glocation.surveyrecord/files/image.png")
         )
 
         val contextCaptor = argumentCaptor<Context>()
@@ -87,7 +87,7 @@ class MediaUtilsTest {
         assertThat(intentCaptor.firstValue.action, `is`(Intent.ACTION_VIEW))
         assertThat(
             intentCaptor.firstValue.data.toString(),
-            `is`("content://org.odk.collect.android.provider/external_files/Android/data/org.odk.collect.android/files/image.png")
+            `is`("content://co.glocation.surveyrecord.provider/external_files/Android/data/co.glocation.surveyrecord/files/image.png")
         )
         assertThat(intentCaptor.firstValue.type, `is`("image/*"))
     }

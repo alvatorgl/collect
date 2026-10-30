@@ -38,13 +38,13 @@
   <string name="search">検索</string>
   <string name="not_granted_permission">開始しようとしているアクティビティは、必要なアクセス許可が付与されていません。</string>
   <string name="storage_runtime_permission_denied_title">ストレージのアクセス許可</string>
-  <string name="storage_runtime_permission_denied_desc">これらのアクセス許可がないと、Collect はフォームにアクセスしたり、回答を保存することができません。 アクセス許可を付与する準備ができたら、アプリをもう一度開いてください。</string>
+  <string name="storage_runtime_permission_denied_desc">これらのアクセス許可がないと、Survey Record はフォームにアクセスしたり、回答を保存することができません。 アクセス許可を付与する準備ができたら、アプリをもう一度開いてください。</string>
   <string name="location_runtime_permissions_denied_title">位置情報アクセス許可</string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
   <string name="camera_runtime_permission_denied_title">カメラアクセス許可</string>
-  <string name="camera_runtime_permission_denied_desc">このアクセス許可がないと、Collect はカメラにアクセスできません。 付与する準備ができたら、もう一度お試しください。</string>
+  <string name="camera_runtime_permission_denied_desc">このアクセス許可がないと、Survey Record はカメラにアクセスできません。 付与する準備ができたら、もう一度お試しください。</string>
   <string name="record_audio_runtime_permission_denied_title">オーディオ録音アクセス許可</string>
-  <string name="record_audio_runtime_permission_denied_desc">このアクセス許可がないと、Collect はマイクにアクセスできません。 付与する準備ができたら、もう一度お試しください。</string>
+  <string name="record_audio_runtime_permission_denied_desc">このアクセス許可がないと、Survey Record はマイクにアクセスできません。 付与する準備ができたら、もう一度お試しください。</string>
   <!--##############################################
     # FILL BLANK FORM
     ##############################################-->
@@ -405,7 +405,7 @@
   <string name="enable_gps">GPS を有効にする</string>
   <string name="gps_enable_message">お使いのデバイスで GPS は無効になっています。有効にしますか?</string>
   <string name="geo_clear_warning">機能は既に作成済です。機能をクリアしますか?</string>
-  <string name="geo_exit_warning">変更を破棄して ODK の戻りますか?</string>
+  <string name="geo_exit_warning">変更を破棄して Survey Record の戻りますか?</string>
   <string name="polygon_validator">ポリゴンを作成するには、少なくとも 3 点指定する必要があります</string>
   <string name="polyline_validator">ポリラインを作成するには、少なくとも2点指定する必要があります</string>
   <string name="clear">クリア</string>
@@ -493,9 +493,9 @@
     ##############################################-->
   <string name="report_to_project_lead">この問題が引き続き発生する場合は、データの収集を依頼した人に報告してください。</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="unreachable_error">Collect が %s のサーバーに到達できません。 URL を正しく入力しましたか?</string>
+  <string name="unreachable_error">Survey Record が %s のサーバーに到達できません。 URL を正しく入力しましたか?</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="security_error">Collect が %s のサーバーに安全に接続できません。 URL を正しく入力しましたか?</string>
+  <string name="security_error">Survey Record が %s のサーバーに安全に接続できません。 URL を正しく入力しましたか?</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
   <string name="server_error">サーバー %1$s がステータスコード %2$s を返しました。</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
@@ -695,8 +695,8 @@
      # ABOUT
      ##############################################-->
   <string name="about_preferences">アプリについて</string>
-  <string name="tell_your_friends">ODK Collect を共有</string>
-  <string name="tell_your_friends_msg">あなたの同僚はまだ紙でデータを収集しているのですか? ODK Collect を彼らと共有しましょう。</string>
+  <string name="tell_your_friends">Survey Record を共有</string>
+  <string name="tell_your_friends_msg">あなたの同僚はまだ紙でデータを収集しているのですか? Survey Record を彼らと共有しましょう。</string>
   <string name="leave_a_review">Play ストアにレビューを残す</string>
   <string name="leave_a_review_msg">あなたの (肯定的な) レビューが Play ストアでアプリの認知度を向上させてくれます</string>
   <string name="odk_website">ODK ウェブサイトを訪問</string>
@@ -744,7 +744,7 @@
   <string name="fs_delete_media_path_if_file_error">\'%s\' を削除できませんでした。ファイルを手動で削除して、フォームを再ダウンロードしてください。</string>
   <string name="fs_create_media_folder_error">メディアフォルダー \'%s\' を作成できませんでした。</string>
   <string name="fs_file_copy_error">\'%1$s\' を \'%2$s\' に上書きコピーできませんでした。理由: %3$s</string>
-  <string name="select_odk_shortcut">ODK ショートカットを選択</string>
+  <string name="select_odk_shortcut">Survey Record ショートカットを選択</string>
   <!--##############################################
      # Projects
      ##############################################-->
@@ -811,7 +811,7 @@
     ##############################################-->
   <!--Section title in settings-->
   <!--Option provided in the Developer tools settings to force an application crash-->
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <!--##############################################

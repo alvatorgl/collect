@@ -47,14 +47,14 @@
   <string name="search">Suche</string>
   <string name="not_granted_permission">Die Aktivität, die Sie versuchen zu starten, benötigt eine Berechtigung, die nicht gewährt wurde. </string>
   <string name="storage_runtime_permission_denied_title">Speicher-Berechtigungen</string>
-  <string name="storage_runtime_permission_denied_desc">Ohne diese Berechtigungen kann Collect nicht auf Formulare zugreifen und Antworten speichern. Starten Sie die App erneut, wenn sie bereit dazu sind die Berechtigung zu erteilen.</string>
+  <string name="storage_runtime_permission_denied_desc">Ohne diese Berechtigungen kann Survey Record nicht auf Formulare zugreifen und Antworten speichern. Starten Sie die App erneut, wenn sie bereit dazu sind die Berechtigung zu erteilen.</string>
   <string name="location_runtime_permissions_denied_title">Standort-Berechtigungen</string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
-  <string name="location_runtime_permissions_denied_desc">Ohne die Berechtigung <b>Genauer Standort</b> kann Collect Ihren Standort nicht erfassen. Bitte versuchen Sie es erneut, wenn Sie bereit dazu sind die Berechtigung zu erteilen.</string>
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
+  <string name="location_runtime_permissions_denied_desc">Ohne die Berechtigung <b>Genauer Standort</b> kann Survey Record Ihren Standort nicht erfassen. Bitte versuchen Sie es erneut, wenn Sie bereit dazu sind die Berechtigung zu erteilen.</string>
   <string name="camera_runtime_permission_denied_title">Kamera-Berechtigung</string>
-  <string name="camera_runtime_permission_denied_desc">Ohne diese Berechtigung kann Collect nicht auf die Kamera zugreifen. Bitte versuchen Sie es erneut, wenn Sie dazu bereit sind die Berechtigung zu erteilen.</string>
+  <string name="camera_runtime_permission_denied_desc">Ohne diese Berechtigung kann Survey Record nicht auf die Kamera zugreifen. Bitte versuchen Sie es erneut, wenn Sie dazu bereit sind die Berechtigung zu erteilen.</string>
   <string name="record_audio_runtime_permission_denied_title">Audioaufnahmeberechtigung</string>
-  <string name="record_audio_runtime_permission_denied_desc">Ohne diese Berechtigungen kann Collect nicht auf das Mikrofon zugreifen. Bitte versuchen Sie es erneut, wenn Sie bereit dazu sind die Berechtigungen zu erteilen.</string>
+  <string name="record_audio_runtime_permission_denied_desc">Ohne diese Berechtigungen kann Survey Record nicht auf das Mikrofon zugreifen. Bitte versuchen Sie es erneut, wenn Sie bereit dazu sind die Berechtigungen zu erteilen.</string>
   <!--##############################################
     # FILL BLANK FORM
     ##############################################-->
@@ -500,7 +500,7 @@
   <string name="enable_gps">GPS aktivieren</string>
   <string name="gps_enable_message">GPS ist auf Ihrem Gerät deaktiviert. Möchten Sie es aktivieren?</string>
   <string name="geo_clear_warning">Merkmal bereits erzeugt. Möchten Sie das Merkmal löschen?</string>
-  <string name="geo_exit_warning">Änderungen verwerfen und zu ODK zurückkehren?</string>
+  <string name="geo_exit_warning">Änderungen verwerfen und zu Survey Record zurückkehren?</string>
   <string name="polygon_validator">Min. 3 Punkte notwendig um ein Polygon zu erzeugen</string>
   <string name="polyline_validator">Min. 2 Punkte notwendig um eine Polylinie zu erzeugen</string>
   <string name="clear">Löschen</string>
@@ -608,7 +608,7 @@
   <string name="form_updates_available">Formular-Updates verfügbar</string>
   <string name="newer_version_of_a_form_info">Dies ist eine aktualisierte Version eines bereits vorhandenen Formulars!</string>
   <string name="form_update_error">Formular-Update fehlgeschlagen</string>
-  <string name="form_update_error_massage">ODK Collect öffnen um es erneut zu versuchen</string>
+  <string name="form_update_error_massage">Survey Record öffnen um es erneut zu versuchen</string>
   <!--Text for notification shown while syncing forms with the server-->
   <string name="form_update_notification_title">Formulare synchronisieren</string>
   <string name="load_remote_form_error">Formularlisten-Download fehlgeschlagen</string>
@@ -623,9 +623,9 @@
     ##############################################-->
   <string name="report_to_project_lead">Wenn Sie weiterhin dieses Problem haben, berichten Sie es an die Person, die Sie zum Daten sammeln beauftragt hat.</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="unreachable_error">Collect kann den Server unter %s nicht erreichen. Haben Sie die URL korrekt eingegeben? </string>
+  <string name="unreachable_error">Survey Record kann den Server unter %s nicht erreichen. Haben Sie die URL korrekt eingegeben? </string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="security_error">Collect kann sich nicht sicher mit dem Server unter %s verbinden. Haben Sie die URL korrekt eingegeben? </string>
+  <string name="security_error">Survey Record kann sich nicht sicher mit dem Server unter %s verbinden. Haben Sie die URL korrekt eingegeben? </string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
   <string name="server_error">Der Server %1$s antwortete mit Statuscode %2$s. </string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
@@ -859,8 +859,8 @@
      # ABOUT
      ##############################################-->
   <string name="about_preferences">Über</string>
-  <string name="tell_your_friends">ODK Collect teilen</string>
-  <string name="tell_your_friends_msg">Erfassen Ihre Kollegen Daten immer noch auf Papier? Empfehlen Sie Ihnen ODK Collect.</string>
+  <string name="tell_your_friends">Survey Record teilen</string>
+  <string name="tell_your_friends_msg">Erfassen Ihre Kollegen Daten immer noch auf Papier? Empfehlen Sie Ihnen Survey Record.</string>
   <string name="leave_a_review">Geben Sie eine Play Store Bewertung ab</string>
   <string name="leave_a_review_msg">Ihre (hoffentlich positive) Bewertung steigert die Bekanntheit der App im Play Store.</string>
   <string name="odk_website">ODK-Webseite öffnen</string>
@@ -912,7 +912,7 @@
   <string name="fs_delete_media_path_if_file_error">\'%s\' konnte nicht gelöscht werden. Bitte löschen Sie die Datei manuell und laden Sie das Formular erneut herunter.</string>
   <string name="fs_create_media_folder_error">Das Medien-Verzeichnis \'%s\' kann nicht angelegt werden.</string>
   <string name="fs_file_copy_error">Konnte \'%1$s\' nicht über \'%2$s\' kopieren. Grund: %3$s</string>
-  <string name="select_odk_shortcut">ODK Verknüpfung auswählen</string>
+  <string name="select_odk_shortcut">Survey Record Verknüpfung auswählen</string>
   <string name="background_audio_help">Dieses Formular zeichnet Audio über das Mikrofon ihres Gerätes auf.\n\nSie können die Lautstärkeanzeige nutzen, um sicher zu gehen, dass das Mikrofon nah genug am Geräusch ist, das Sie aufzeichnen möchten.\n\nUm die Aufzeichnung zu beenden, verlassen Sie das Formular.\n\nFür weitere Informationen kontaktieren Sie bitte die Person, die Sie gebeten hat die Daten zu sammeln.</string>
   <string name="loading">Lade…</string>
   <!--##############################################
@@ -987,9 +987,9 @@
     # Form opening errors
     ##############################################-->
   <!--Error shown when a user tries to open a form that's in a different project-->
-  <string name="wrong_project_selected_for_form">Um dieses Formular zu öffnen, müssen Sie zuerst ODK Collect öffnen und in das Projekt wechseln, in dem es enthalten ist.</string>
+  <string name="wrong_project_selected_for_form">Um dieses Formular zu öffnen, müssen Sie zuerst Survey Record öffnen und in das Projekt wechseln, in dem es enthalten ist.</string>
   <!--Error shown when a user tries to open a form when there are no projects-->
-  <string name="app_not_configured">ODK Collect wurde nicht konfiguriert. Versuchen Sie ODK Collect zu öffnen und zu konfigurieren.\n\nWenn Sie auf eine Verknüpfung getippt haben, müssen Sie diese vielleicht nach der Konfiguration neu erstellen.</string>
+  <string name="app_not_configured">Survey Record wurde nicht konfiguriert. Versuchen Sie Survey Record zu öffnen und zu konfigurieren.\n\nWenn Sie auf eine Verknüpfung getippt haben, müssen Sie diese vielleicht nach der Konfiguration neu erstellen.</string>
   <!--Displayed when form filling is attempted to be launched by intent but the intent URI mime type is unknown-->
   <string name="unrecognized_uri">Unbekannte URI: %s</string>
   <!--Displayed when form filling is attempted to be launched by intent but the intent URI is incorrect-->
@@ -1013,7 +1013,7 @@
   <!--Label for entity that has been created offline and is not on the server yet-->
   <string name="offline">Offline</string>
   <!--Error message displayed when a user opens a form with an unrecognized entity version-->
-  <string name="unrecognized_entity_version">Dieses Formular wird von dieser ODK Collect Version nicht unterstützt. Bitte Collect updaten. Falls dieses Problem weiterhin auftritt, melden Sie es der Person, die sie zur Datenerfassung beauftragt hat.\n\nForm Entities Spec Version: %s</string>
+  <string name="unrecognized_entity_version">Dieses Formular wird von dieser Survey Record Version nicht unterstützt. Bitte Survey Record updaten. Falls dieses Problem weiterhin auftritt, melden Sie es der Person, die sie zur Datenerfassung beauftragt hat.\n\nForm Entities Spec Version: %s</string>
   <!--##############################################
     # Crash handling
     ##############################################-->
@@ -1032,7 +1032,7 @@
   <string name="dev_tools">Entwicklerwerkzeuge</string>
   <!--Option provided in the Developer tools settings to force an application crash-->
   <string name="crash_app">App abstürzen lassen</string>
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <string name="crash_app_summary">Unbehandelte Ausnahme erzwingen um die App abstürzen zu lassen</string>
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <string name="debug_filters">Debug-Filter</string>
@@ -1040,7 +1040,7 @@
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <string name="use_zxing_for_barcode_scanning">Wechsele zu altem Barcode-Scanner</string>
   <string name="permission_dialog_title">Über Berechtigungen</string>
-  <string name="permission_dialog_text">Sie werden aufgefordert, ODK Collect den Zugriff auf die unten aufgeführten Funktionen zu erlauben. Wählen Sie \"Zulassen\", wenn Sie sie nutzen möchten.</string>
+  <string name="permission_dialog_text">Sie werden aufgefordert, Survey Record den Zugriff auf die unten aufgeführten Funktionen zu erlauben. Wählen Sie \"Zulassen\", wenn Sie sie nutzen möchten.</string>
   <string name="notifications">Benachrichtigungen</string>
   <string name="required_for_notifications">Wird benötigt um Aktualisierungen anzuzeigen, wenn Formulare heruntergeladen, aktualisiert und übertragen werden.</string>
   <!--##############################################
@@ -1140,7 +1140,7 @@
   <!--Title displayed in a dialog before starting a form if there is a work to recover-->
   <string name="savepoint_recovery_dialog_title">Ihre Arbeit Wiederherstellen?</string>
   <!--Message displayed in a dialog before starting a form if there is a work to recover. Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html-->
-  <string name="savepoint_recovery_dialog_message">\'Collect wurde am \'EEE, MMM dd, yyyy \'um\' HH:mm\' unerwartet beendet und hat ihre Arbeit gespeichert.\n\nWollen Sie die gespeicherte Arbeit wiederherstellen oder verwerfen?\'</string>
+  <string name="savepoint_recovery_dialog_message">\'Survey Record wurde am \'EEE, MMM dd, yyyy \'um\' HH:mm\' unerwartet beendet und hat ihre Arbeit gespeichert.\n\nWollen Sie die gespeicherte Arbeit wiederherstellen oder verwerfen?\'</string>
   <!--Text for the button that accepts the recovery of the work-->
   <string name="recover">Wiederherstellen</string>
   <!--Text for the button that declines the recovery of the work-->

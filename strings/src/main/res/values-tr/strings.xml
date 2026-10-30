@@ -38,9 +38,9 @@
   <!--Displayed in search boxes for form lists or question types that involve search-->
   <string name="search">Arama</string>
   <string name="storage_runtime_permission_denied_title">Saklama izinleri</string>
-  <string name="storage_runtime_permission_denied_desc">Bu izinler olmadan Collect formlarınıza erişemez ya da cevapları saklayamaz. İzinleri vermek için hazır olduğunuzda uygulamayı tekrar açın.</string>
+  <string name="storage_runtime_permission_denied_desc">Bu izinler olmadan Survey Record formlarınıza erişemez ya da cevapları saklayamaz. İzinleri vermek için hazır olduğunuzda uygulamayı tekrar açın.</string>
   <string name="location_runtime_permissions_denied_title">Konum izinleri</string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
   <string name="camera_runtime_permission_denied_title">Kamera izinleri</string>
   <string name="record_audio_runtime_permission_denied_title">Ses kaydetme izni</string>
   <!--##############################################
@@ -494,7 +494,7 @@
     ##############################################-->
   <!--Section title in settings-->
   <!--Option provided in the Developer tools settings to force an application crash-->
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <!--##############################################

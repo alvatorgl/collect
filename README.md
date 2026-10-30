@@ -1,3 +1,9 @@
+# Survey Record
+
+Survey Record is a data-collection app based on [ODK Collect](https://github.com/getodk/collect) by [Get ODK](https://getodk.org). It is licensed under the Apache License 2.0. Copyright and attribution for the upstream project remain in `LICENSE.md` and in the source file headers. The interface uses [Inter](https://fonts.google.com/specimen/Inter) and [Unbounded](https://fonts.google.com/specimen/Unbounded), both under the SIL Open Font License (see `collect_app/src/main/assets/font-licenses/`).
+
+The notes below are the upstream ODK Collect developer documentation and still apply to this fork.
+
 # ODK Collect
 
 ![Platform](https://img.shields.io/badge/platform-Android-blue.svg)
