@@ -38,6 +38,7 @@ object ProjectKeys {
     const val KEY_GUIDANCE_HINT = "guidance_hint"
     const val KEY_EXTERNAL_APP_RECORDING = "external_app_recording"
     const val KEY_INSTANCE_SYNC = "instance_sync"
+    const val KEY_GENERATE_PDF_ON_FINALIZE = "generate_pdf_on_finalize"
 
     // identity_preferences.xml
     const val KEY_ANALYTICS = "analytics"

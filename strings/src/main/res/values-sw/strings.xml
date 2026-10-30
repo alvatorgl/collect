@@ -46,13 +46,13 @@
   <string name="search">Tafuta</string>
   <string name="not_granted_permission">Kitendo unachijaribu kufanya kinahitaji ruhusa ambayo bado haijatolewa.</string>
   <string name="storage_runtime_permission_denied_title">Ruhusa ya kuhifadhi</string>
-  <string name="storage_runtime_permission_denied_desc">Bila hizi ruhusa Collect haiwezi kufikia fomu au kuhifadhi majibu. Fungua tena program ukiwa tayari kuziruhusu.</string>
+  <string name="storage_runtime_permission_denied_desc">Bila hizi ruhusa Survey Record haiwezi kufikia fomu au kuhifadhi majibu. Fungua tena program ukiwa tayari kuziruhusu.</string>
   <string name="location_runtime_permissions_denied_title">Ruhusa ya kuonesha eneo </string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
   <string name="camera_runtime_permission_denied_title">Ruhusa ya camera</string>
-  <string name="camera_runtime_permission_denied_desc">Bila hii ruhusa Collect haiwezi kutumia kamera. Tafadhali jaribu tena ukiwa tayari kutoa ruhusa.</string>
+  <string name="camera_runtime_permission_denied_desc">Bila hii ruhusa Survey Record haiwezi kutumia kamera. Tafadhali jaribu tena ukiwa tayari kutoa ruhusa.</string>
   <string name="record_audio_runtime_permission_denied_title">Ruhusa ya kurekodi sauti</string>
-  <string name="record_audio_runtime_permission_denied_desc">Bila hii ruhusa Collect haiwezi kutumia kinakili sauti. Tafadhali jaribu tena ukiwa tayari kutoa ruhusa.</string>
+  <string name="record_audio_runtime_permission_denied_desc">Bila hii ruhusa Survey Record haiwezi kutumia kinakili sauti. Tafadhali jaribu tena ukiwa tayari kutoa ruhusa.</string>
   <!--##############################################
     # FILL BLANK FORM
     ##############################################-->
@@ -392,7 +392,7 @@
   <string name="enable_gps">Wezesha GPS</string>
   <string name="gps_enable_message">GPS imezimwa kwenye kifaa chako. Ungependa kutumia?</string>
   <string name="geo_clear_warning">Umbo lishatengenezwa. Ungependa kufuta Umbo?</string>
-  <string name="geo_exit_warning">Sitisha mabadiliko na rudi kwenye ODK?</string>
+  <string name="geo_exit_warning">Sitisha mabadiliko na rudi kwenye Survey Record?</string>
   <string name="polygon_validator">Lazima uwe na angalau  nukta 3 ili kutengeneza poligoni</string>
   <string name="polyline_validator">Ni lazima uwe angalau na pointi 2 kutengeneza Mistari </string>
   <string name="clear">Futa</string>
@@ -653,8 +653,8 @@
      # ABOUT
      ##############################################-->
   <string name="about_preferences">Kuhusu</string>
-  <string name="tell_your_friends">Shirikisha wengine programu ya ODK collect</string>
-  <string name="tell_your_friends_msg">Je ndugu na jamaa zako bado wanakusanya taarifa kupitia karatasi? Washirikishe programu ya ODK.</string>
+  <string name="tell_your_friends">Shirikisha wengine programu ya Survey Record collect</string>
+  <string name="tell_your_friends_msg">Je ndugu na jamaa zako bado wanakusanya taarifa kupitia karatasi? Washirikishe programu ya Survey Record.</string>
   <string name="leave_a_review">Acha tathmini katika Play Store</string>
   <string name="leave_a_review_msg">Tathmini yako (tunatumaini itakuwa chanya) inaongeza nafasi ya programu hii kuonekana Pay Store</string>
   <string name="odk_website">Tembelea tovuti ya ODK</string>
@@ -692,7 +692,7 @@
   <string name="fs_delete_media_path_if_file_error">Imeshindwa kufuta\'%s\'. Tafadhali futa kabrasha na rudia kupakua fomu.</string>
   <string name="fs_create_media_folder_error">Imeshindwa tengeneza kabrasha la midia\'%s\'.</string>
   <string name="fs_file_copy_error">Haiwezi nakili  \'%1$s\' zidi ya \'%2$s\'. Sababu:%3$s</string>
-  <string name="select_odk_shortcut">Chagua njia fupi ya ODK </string>
+  <string name="select_odk_shortcut">Chagua njia fupi ya Survey Record </string>
   <!--##############################################
      # Projects
      ##############################################-->
@@ -764,7 +764,7 @@
     ##############################################-->
   <!--Section title in settings-->
   <!--Option provided in the Developer tools settings to force an application crash-->
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <!--##############################################

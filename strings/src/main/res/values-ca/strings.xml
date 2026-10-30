@@ -27,7 +27,7 @@
   <!--A sort option for blank forms. When this option is selected, the form for which a filled instance was last filled will go first.-->
   <string name="filter_the_list">Filtra la llista</string>
   <!--Displayed in search boxes for form lists or question types that involve search-->
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
   <!--##############################################
     # FILL BLANK FORM
     ##############################################-->
@@ -259,7 +259,7 @@
   <string name="start">Comença</string>
   <string name="enable_gps">Activa GPS</string>
   <string name="geo_clear_warning">Característica ja creada. Vols netejar-la?</string>
-  <string name="geo_exit_warning">Descartar canvis i tornar a ODK?</string>
+  <string name="geo_exit_warning">Descartar canvis i tornar a Survey Record?</string>
   <string name="polygon_validator">Per crear un polígon calen mínim 3 punts </string>
   <string name="clear">Neteja</string>
   <!--Used to display choices for location recording interval in geotrace and geoshape questions-->
@@ -469,7 +469,7 @@
   <string name="fs_delete_media_path_if_file_error">No pot esborrar \'%s\': Si us plau, esborrar l\'arxiu manualment i recarregar el formulari.</string>
   <string name="fs_create_media_folder_error">No pot crear la carpeta de medis \'%s\'</string>
   <string name="fs_file_copy_error">No pot copiar \'%1$s\' sobre \'%2$s\'. Raó: %3$s</string>
-  <string name="select_odk_shortcut">Selecciona drecera ODK</string>
+  <string name="select_odk_shortcut">Selecciona drecera Survey Record</string>
   <!--##############################################
      # Projects
      ##############################################-->
@@ -535,7 +535,7 @@
     ##############################################-->
   <!--Section title in settings-->
   <!--Option provided in the Developer tools settings to force an application crash-->
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <!--##############################################

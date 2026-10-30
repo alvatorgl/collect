@@ -1,5 +1,6 @@
 package org.odk.collect.maps
 
+import androidx.core.graphics.ColorUtils
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
@@ -54,7 +55,15 @@ class PolygonDescriptionTest {
     @Test
     fun `getFillColor returns the default color when the passed one is null`() {
         val polygonDescription = PolygonDescription(fillColor = null)
-        assertThat(polygonDescription.getFillColor(), equalTo(1144954828))
+        assertThat(
+            polygonDescription.getFillColor(),
+            equalTo(
+                ColorUtils.setAlphaComponent(
+                    MapConsts.DEFAULT_STROKE_COLOR,
+                    MapConsts.DEFAULT_FILL_COLOR_OPACITY
+                )
+            )
+        )
     }
 
     @Test

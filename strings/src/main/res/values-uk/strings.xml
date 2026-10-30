@@ -37,13 +37,13 @@
   <!--Displayed in search boxes for form lists or question types that involve search-->
   <string name="search">Пошук</string>
   <string name="storage_runtime_permission_denied_title">Дозволи сховища</string>
-  <string name="storage_runtime_permission_denied_desc">Без цих дозволів Collect не матиме дотупу до ваших анкет (читання, запис відповідей). Відкрийте програму знову, ящо ви вже їх надали.</string>
+  <string name="storage_runtime_permission_denied_desc">Без цих дозволів Survey Record не матиме дотупу до ваших анкет (читання, запис відповідей). Відкрийте програму знову, ящо ви вже їх надали.</string>
   <string name="location_runtime_permissions_denied_title">Місцеві дозволи</string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
   <string name="camera_runtime_permission_denied_title">Дозвіл використання камери</string>
-  <string name="camera_runtime_permission_denied_desc">Без цього дозволу Collect не має доступу до камери. Будь ласка, спробуйте знову коли будете готові надати його.</string>
+  <string name="camera_runtime_permission_denied_desc">Без цього дозволу Survey Record не має доступу до камери. Будь ласка, спробуйте знову коли будете готові надати його.</string>
   <string name="record_audio_runtime_permission_denied_title">Дозвіл на аудіозапис</string>
-  <string name="record_audio_runtime_permission_denied_desc">Без цього дозволу Collect не має доступу до мікрофону. Будь ласка, спробуйте знову коли будете готові надати його.</string>
+  <string name="record_audio_runtime_permission_denied_desc">Без цього дозволу Survey Record не має доступу до мікрофону. Будь ласка, спробуйте знову коли будете готові надати його.</string>
   <!--##############################################
     # FILL BLANK FORM
     ##############################################-->
@@ -352,7 +352,7 @@
   <string name="start">Почати</string>
   <string name="enable_gps">Увімкнути GPS</string>
   <string name="geo_clear_warning">Ознака вже створена. Бажаєте очистити ознаку?</string>
-  <string name="geo_exit_warning">Скасувати зміни і повернутись до ODK?</string>
+  <string name="geo_exit_warning">Скасувати зміни і повернутись до Survey Record?</string>
   <string name="polygon_validator">Для багатокутника необхідно мінімум 3 точки</string>
   <string name="polyline_validator">Для створення лінії необхідні принаймні дві точки</string>
   <string name="clear">Очистити</string>
@@ -632,8 +632,8 @@
      # ABOUT
      ##############################################-->
   <string name="about_preferences">Про нас</string>
-  <string name="tell_your_friends">Поширити ODK Collect</string>
-  <string name="tell_your_friends_msg">Ваші колеги досі збирають дані через паперові акети? Поділіться з ними ODK Collect.</string>
+  <string name="tell_your_friends">Поширити Survey Record</string>
+  <string name="tell_your_friends_msg">Ваші колеги досі збирають дані через паперові акети? Поділіться з ними Survey Record.</string>
   <string name="leave_a_review">Залишити відгук в Play Store</string>
   <string name="leave_a_review_msg">Ваш (сподіваємось позитивний) відгук покращить помітність програми в Play Store.</string>
   <string name="odk_website">Перейти на сайт ODK</string>
@@ -672,7 +672,7 @@
   <string name="fs_delete_media_path_if_file_error">Не можу видалити\'%s\'. Будь ласка, видаліть файл вручну та завантажте анкету знову.</string>
   <string name="fs_create_media_folder_error">Неможливо створити медіа директорію \'%s\'.</string>
   <string name="fs_file_copy_error">Неможливо скопіювати \'%1$s\' в \'%2$s\'. Причина: %3$s</string>
-  <string name="select_odk_shortcut">Обрати посилання ODK</string>
+  <string name="select_odk_shortcut">Обрати посилання Survey Record</string>
   <!--##############################################
      # Projects
      ##############################################-->
@@ -738,7 +738,7 @@
     ##############################################-->
   <!--Section title in settings-->
   <!--Option provided in the Developer tools settings to force an application crash-->
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <!--##############################################

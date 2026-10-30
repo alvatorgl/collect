@@ -39,7 +39,7 @@
   <string name="search">Sök</string>
   <string name="storage_runtime_permission_denied_title">Lagringsbehörigheter</string>
   <string name="location_runtime_permissions_denied_title">Platsbehörigheter</string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
   <string name="camera_runtime_permission_denied_title">Kamerabehörigheter</string>
   <string name="record_audio_runtime_permission_denied_title">Behörigheter för att spela in ljud</string>
   <!--##############################################
@@ -359,7 +359,7 @@
   <string name="enable_gps">Aktivera GPS</string>
   <string name="gps_enable_message">GPS är inte aktiverad på din enhet. Vill du aktivera den?</string>
   <string name="geo_clear_warning">Objekt redan skapat. Vill du rensa objektet?</string>
-  <string name="geo_exit_warning">Ignorera ändringar och återgå till ODK?</string>
+  <string name="geo_exit_warning">Ignorera ändringar och återgå till Survey Record?</string>
   <string name="polygon_validator">Minst tre punkter krävs för att skapa en polygon</string>
   <string name="polyline_validator">Det behövs minst 2 punkter för att skapa en polyline</string>
   <string name="clear">Rensa</string>
@@ -610,9 +610,9 @@
      # ABOUT
      ##############################################-->
   <string name="about_preferences">Om</string>
-  <string name="tell_your_friends">Dela ODK Collect</string>
+  <string name="tell_your_friends">Dela Survey Record</string>
   <string name="tell_your_friends_msg">Samlar dina kollegor fortfarande data på papper?
-Dela ODK Collect med dem.</string>
+Dela Survey Record med dem.</string>
   <string name="leave_a_review">Lämna ett omdöme på Play Store</string>
   <string name="leave_a_review_msg">Din (förhoppningsvis positiva) recension ökar synligheten av Appen i Play Store.</string>
   <string name="odk_website">Besök ODKs hemsida</string>
@@ -652,7 +652,7 @@ Dela ODK Collect med dem.</string>
   <string name="fs_delete_media_path_if_file_error">Kan inte radera \'%s\'. Vänligen radera filen manuellt och ladda hem formuläret igen.</string>
   <string name="fs_create_media_folder_error">Kan inte skapa mediamappen \'%s\'.</string>
   <string name="fs_file_copy_error">Kan inte kopiera \'%1$s\' över \'%2$s\'. Orsak: %3$s</string>
-  <string name="select_odk_shortcut">Välj ODK genväg</string>
+  <string name="select_odk_shortcut">Välj Survey Record genväg</string>
   <!--##############################################
      # Projects
      ##############################################-->
@@ -719,7 +719,7 @@ Dela ODK Collect med dem.</string>
     ##############################################-->
   <!--Section title in settings-->
   <!--Option provided in the Developer tools settings to force an application crash-->
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <!--##############################################

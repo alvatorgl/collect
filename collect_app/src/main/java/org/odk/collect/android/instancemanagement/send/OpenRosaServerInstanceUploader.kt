@@ -4,6 +4,7 @@ import android.net.Uri
 import org.odk.collect.analytics.Analytics
 import org.odk.collect.android.analytics.AnalyticsEvents
 import org.odk.collect.android.application.Collect
+import org.odk.collect.android.pdf.PdfReportFiles
 import org.odk.collect.android.projects.ProjectDependencyModule
 import org.odk.collect.android.utilities.ResponseMessageParser
 import org.odk.collect.android.utilities.WebCredentialsUtils
@@ -237,6 +238,10 @@ class OpenRosaServerInstanceUploader(
                 fileName.startsWith(".") -> continue // ignore invisible files
                 fileName == instanceFile.name -> continue // the xml file has already been added
                 fileName == submissionFile.name -> continue // the xml file has already been added
+                // Central rejects files the form does not declare. Keep the local PDF
+                // out of the POST unless the submission XML names it (pdf_report).
+                PdfReportFiles.isReportForInstance(file, instanceFile) &&
+                    !PdfReportFiles.submissionReferencesReport(submissionFile, fileName) -> continue
             }
 
             files.add(file)

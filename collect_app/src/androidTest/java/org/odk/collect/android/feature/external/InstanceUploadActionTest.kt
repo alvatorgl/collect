@@ -11,6 +11,7 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.RuleChain
 import org.junit.runner.RunWith
+import org.odk.collect.android.BuildConfig
 import org.odk.collect.android.external.InstancesContract
 import org.odk.collect.android.support.TestDependencies
 import org.odk.collect.android.support.pages.FormEntryPage
@@ -44,7 +45,7 @@ class InstanceUploadActionTest {
                     it.getLong(it.getColumnIndex(_ID))
                 }
 
-        val intent = Intent("org.odk.collect.android.INSTANCE_UPLOAD")
+        val intent = Intent(BuildConfig.APPLICATION_ID + ".INSTANCE_UPLOAD")
         intent.type = InstancesContract.CONTENT_TYPE
         intent.putExtra(ApplicationConstants.BundleKeys.URL, testDependencies.server.url)
         intent.putExtra("instances", longArrayOf(instanceId))
@@ -58,7 +59,7 @@ class InstanceUploadActionTest {
     fun whenInstanceDoesNotExist_showsError() {
         rule.startAtMainMenu()
 
-        val intent = Intent("org.odk.collect.android.INSTANCE_UPLOAD")
+        val intent = Intent(BuildConfig.APPLICATION_ID + ".INSTANCE_UPLOAD")
         intent.type = InstancesContract.CONTENT_TYPE
         intent.putExtra("instances", longArrayOf(11))
 

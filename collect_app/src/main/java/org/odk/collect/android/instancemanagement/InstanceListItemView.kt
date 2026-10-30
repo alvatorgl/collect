@@ -1,15 +1,20 @@
 package org.odk.collect.android.instancemanagement
 
+import android.app.Activity
 import android.content.Context
 import android.view.View
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import org.odk.collect.android.R
+import org.odk.collect.android.pdf.PdfReportFiles
+import org.odk.collect.android.pdf.PdfReportSharer
 import org.odk.collect.android.utilities.FormsRepositoryProvider
 import org.odk.collect.forms.instances.Instance
 import org.odk.collect.material.ErrorsPill
 import org.odk.collect.strings.R.string
 import timber.log.Timber
+import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -35,6 +40,24 @@ object InstanceListItemView {
                 Instance.STATUS_VALID, Instance.STATUS_NEW_EDIT -> pill.errors = false
                 else -> pill.visibility = View.GONE
             }
+        }
+
+        val sharePdf = view.findViewById<ImageButton>(R.id.share_pdf)
+        val instancePath = instance.instanceFilePath
+        val report = if (instancePath.isNullOrBlank()) {
+            null
+        } else {
+            PdfReportFiles.reportFile(File(instancePath))
+        }
+        if (sharePdf != null && report != null && report.isFile) {
+            sharePdf.visibility = View.VISIBLE
+            sharePdf.setOnClickListener {
+                val activity = context as? Activity ?: return@setOnClickListener
+                PdfReportSharer.share(activity, File(instancePath))
+            }
+        } else {
+            sharePdf?.visibility = View.GONE
+            sharePdf?.setOnClickListener(null)
         }
 
         if (shouldCheckDisabled) {

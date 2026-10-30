@@ -49,7 +49,7 @@
   <string name="storage_runtime_permission_denied_title">Permisos de Almacenamiento</string>
   <string name="storage_runtime_permission_denied_desc">Sin estos permisos no se puede accesar los formularios o guardar las respuetas. Abra la aplicación de nuevo cuando esté listo para dar acceso</string>
   <string name="location_runtime_permissions_denied_title">Permisos de Ubicación</string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
   <string name="location_runtime_permissions_denied_desc">Sin el permiso de <b>Localización precisa</b> no puede registrar su ubicación. Intente de nuevo cuando esté el permiso.</string>
   <string name="camera_runtime_permission_denied_title">Permiso de Cámara</string>
   <string name="camera_runtime_permission_denied_desc">Sin este permiso la aplicación no puede acceder a la cámara. Intente de nuevo cuando esté el permiso.</string>
@@ -608,7 +608,7 @@
   <string name="form_updates_available">Formularios actualizados disponibles</string>
   <string name="newer_version_of_a_form_info">Esta es una actualización a un formulario que tiene</string>
   <string name="form_update_error">Error al actualizar formulario</string>
-  <string name="form_update_error_massage">Abre ODK Collect para volver a intentarlo.</string>
+  <string name="form_update_error_massage">Abre Survey Record para volver a intentarlo.</string>
   <!--Text for notification shown while syncing forms with the server-->
   <string name="form_update_notification_title">Sincronización de formularios</string>
   <string name="load_remote_form_error">Error al descargar la lista de formularios</string>
@@ -673,6 +673,10 @@
   <string name="maps_settings_subtext">Mapa base, estilo, capas</string>
   <!--Title of a settings section-->
   <string name="form_management_preferences">Manejo de formularios</string>
+  <string name="generate_pdf_on_finalize">Generar PDF al finalizar</string>
+  <string name="generate_pdf_on_finalize_summary">Guarda un resumen en PDF en la carpeta del formulario. Para enviarlo al servidor, agregue una pregunta opcional llamada pdf_report.</string>
+  <string name="share_pdf_report">Compartir PDF</string>
+  <string name="pdf_report_missing">No hay un PDF para este registro.</string>
   <!--Subtext of a settings section-->
   <string name="form_management_settings_subtext">Actualización automática, autoenvío, autoborrado</string>
   <!--Title of a settings section-->
@@ -859,7 +863,7 @@
      # ABOUT
      ##############################################-->
   <string name="about_preferences">Acerca de</string>
-  <string name="tell_your_friends">Compartir ODK Collect</string>
+  <string name="tell_your_friends">Compartir Survey Record</string>
   <string name="tell_your_friends_msg">¿Sus colegas aún recogen datos en papel? Comparte con ellos la aplicación</string>
   <string name="leave_a_review">Ir a Play Store - Comentar y/o Actualizar</string>
   <string name="leave_a_review_msg">Su reseña (ojalá positiva) incrementa la visibilidad de la aplicación en Play Store</string>
@@ -1014,7 +1018,7 @@
   <!--Label for entity that has been created offline and is not on the server yet-->
   <string name="offline">Desconectado</string>
   <!--Error message displayed when a user opens a form with an unrecognized entity version-->
-  <string name="unrecognized_entity_version">Este formulario no es compatible con esta versión de ODK Collect. Por favor, actualice Collect. Si sigues teniendo este problema, informa a la persona que te pidió que recopilaras los datos.\n\nForm Entities spec version: %s</string>
+  <string name="unrecognized_entity_version">Este formulario no es compatible con esta versión de Survey Record. Por favor, actualice Survey Record. Si sigues teniendo este problema, informa a la persona que te pidió que recopilaras los datos.\n\nForm Entities spec version: %s</string>
   <!--##############################################
     # Crash handling
     ##############################################-->
@@ -1033,7 +1037,7 @@
   <string name="dev_tools">Herramientas de desarrollo</string>
   <!--Option provided in the Developer tools settings to force an application crash-->
   <string name="crash_app">Aplicación bloqueada</string>
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <string name="crash_app_summary">Se forzó una excepción no detectada que hace que la aplicación se bloquee</string>
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <string name="debug_filters">Filtros de depuración</string>
@@ -1041,7 +1045,7 @@
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <string name="use_zxing_for_barcode_scanning">Volver al escáner de códigos de barras anterior</string>
   <string name="permission_dialog_title">Acerca de los permisos</string>
-  <string name="permission_dialog_text">Se le pedirá que permita el acceso de ODK Collect a las siguientes funciones, seleccione \"permitir\" si desea usarlas.</string>
+  <string name="permission_dialog_text">Se le pedirá que permita el acceso de Survey Record a las siguientes funciones, seleccione \"permitir\" si desea usarlas.</string>
   <string name="notifications">Notificaciones</string>
   <string name="required_for_notifications">Requerido para mostrar actualizaciones cuando los formularios se descargan, actualizan y envían.</string>
   <!--##############################################

@@ -1,18 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimaryLight">#3e9fcc</color>
-    <color name="colorOnPrimaryLight">#ffffff</color>
-    <color name="colorPrimaryContainerLight">#bfe9ff</color>
-    <color name="colorOnPrimaryContainerLight">#001f2a</color>
-    <color name="colorSurfaceLight">#ffffff</color>
-    <color name="colorOnSurfaceLight">#001f2a</color>
-    <color name="colorSurfaceContainerHighestLight">#f2f2f2</color>
+    <!-- GLocation 2027 light palette. on-primary/on-secondary are white because both
+         brand colors clear WCAG AA (5.07:1 and 5.09:1) against #FFFFFF. -->
+    <color name="colorPrimaryLight">#23769C</color>
+    <color name="colorOnPrimaryLight">#FFFFFF</color>
+    <color name="colorPrimaryContainerLight">#D3EAF4</color>
+    <color name="colorOnPrimaryContainerLight">#062838</color>
+    <color name="colorSecondaryLight">#7465A2</color>
+    <color name="colorOnSecondaryLight">#FFFFFF</color>
+    <color name="colorSecondaryContainerLight">#E8E3F4</color>
+    <color name="colorOnSecondaryContainerLight">#2A2144</color>
+    <color name="colorTertiaryLight">#795EFB</color>
+    <!-- #040914 on #795EFB is 4.56:1. White on this violet is 4.37:1, short of AA. -->
+    <color name="colorOnTertiaryLight">#040914</color>
+    <color name="colorTertiaryContainerLight">#E6E0FD</color>
+    <color name="colorOnTertiaryContainerLight">#1B1038</color>
+    <color name="colorBackgroundLight">#FAFBFD</color>
+    <color name="colorSurfaceLight">#FFFFFF</color>
+    <color name="colorOnSurfaceLight">#040914</color>
+    <color name="colorOnSurfaceVariantLight">#3A4A60</color>
+    <color name="colorSurfaceVariantLight">#E7EEF5</color>
+    <color name="colorSurfaceContainerLowestLight">#FFFFFF</color>
+    <color name="colorSurfaceContainerLowLight">#F7F9FC</color>
+    <color name="colorSurfaceContainerLight">#F0F5F9</color>
+    <color name="colorSurfaceContainerHighLight">#E8EEF5</color>
+    <color name="colorSurfaceContainerHighestLight">#E1E8F0</color>
+    <color name="colorOutlineLight">#7A899C</color>
+    <!-- #D64545 was the proposed error red; #D24444 keeps that hue and reaches 4.5:1 with white. -->
+    <color name="colorErrorLight">#D24444</color>
+    <color name="colorOnErrorLight">#FFFFFF</color>
 
-    <color name="colorPrimaryDark">#4cbcf0</color>
-    <color name="colorOnPrimaryDark">#003547</color>
-    <color name="colorPrimaryContainerDark">#004d65</color>
-    <color name="colorOnPrimaryContainerDark">#bfe9ff</color>
-    <color name="colorSurfaceDark">#001117</color>
-    <color name="colorOnSurfaceDark">#d3e5ef</color>
-    <color name="colorSurfaceContainerHighestDark">#162f3b</color>
+    <!-- GLocation 2027 dark palette. Bright cyan and lavender need dark on-colors. -->
+    <color name="colorPrimaryDark">#38C6FF</color>
+    <color name="colorOnPrimaryDark">#04121F</color>
+    <color name="colorPrimaryContainerDark">#0C3D56</color>
+    <color name="colorOnPrimaryContainerDark">#C8F4FF</color>
+    <color name="colorSecondaryDark">#A78BDB</color>
+    <color name="colorOnSecondaryDark">#040914</color>
+    <color name="colorSecondaryContainerDark">#3A2E58</color>
+    <color name="colorOnSecondaryContainerDark">#E6DDF8</color>
+    <color name="colorTertiaryDark">#9478E8</color>
+    <color name="colorOnTertiaryDark">#040914</color>
+    <color name="colorTertiaryContainerDark">#2C2158</color>
+    <color name="colorOnTertiaryContainerDark">#E6DDF8</color>
+    <color name="colorBackgroundDark">#060A15</color>
+    <color name="colorSurfaceDark">#071429</color>
+    <color name="colorOnSurfaceDark">#E7EEF8</color>
+    <color name="colorOnSurfaceVariantDark">#B7C6D8</color>
+    <color name="colorSurfaceVariantDark">#12243F</color>
+    <color name="colorSurfaceContainerLowestDark">#060A15</color>
+    <color name="colorSurfaceContainerLowDark">#071429</color>
+    <color name="colorSurfaceContainerDark">#0A1B35</color>
+    <color name="colorSurfaceContainerHighDark">#0E2444</color>
+    <color name="colorSurfaceContainerHighestDark">#132C52</color>
+    <!-- #436385 is the brand outline. #4A6A8D is the same family, lightened to clear 3:1 on #0A1B35. -->
+    <color name="colorOutlineDark">#4A6A8D</color>
+    <color name="colorErrorDark">#FF6B6B</color>
+    <color name="colorOnErrorDark">#040914</color>
+
+    <color name="brandGradientStart">#539AFC</color>
+    <color name="brandGradientEnd">#9478E8</color>
 </resources>

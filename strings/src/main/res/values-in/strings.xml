@@ -47,14 +47,14 @@
   <string name="search">Cari</string>
   <string name="not_granted_permission">Aktivitas yang Anda lakukan memerlukan izin akses.</string>
   <string name="storage_runtime_permission_denied_title">Izin untuk penyimpanan</string>
-  <string name="storage_runtime_permission_denied_desc">Tanpa izin akses, Collect tidak dapat mengakses formulir Anda ataupun menyimpan jawaban. Buka ulang aplikasi jika Anda sudah yakin untuk memberikan izin.</string>
+  <string name="storage_runtime_permission_denied_desc">Tanpa izin akses, Survey Record tidak dapat mengakses formulir Anda ataupun menyimpan jawaban. Buka ulang aplikasi jika Anda sudah yakin untuk memberikan izin.</string>
   <string name="location_runtime_permissions_denied_title">Izin untuk mengakses lokasi</string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
-  <string name="location_runtime_permissions_denied_desc">Tanpa izin <b> Lokasi Akurat </b>, Collect tidak dapat merekam lokasi anda. Silakan coba lagi ketika anda sudah memberikan izin.</string>
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
+  <string name="location_runtime_permissions_denied_desc">Tanpa izin <b> Lokasi Akurat </b>, Survey Record tidak dapat merekam lokasi anda. Silakan coba lagi ketika anda sudah memberikan izin.</string>
   <string name="camera_runtime_permission_denied_title">Izin untuk mengakses kamera</string>
-  <string name="camera_runtime_permission_denied_desc">Tanpa izin akses, Collect tidak dapat mengakses kamera. Buka ulang aplikasi jika Anda sudah yakin untuk memberikan izin.</string>
+  <string name="camera_runtime_permission_denied_desc">Tanpa izin akses, Survey Record tidak dapat mengakses kamera. Buka ulang aplikasi jika Anda sudah yakin untuk memberikan izin.</string>
   <string name="record_audio_runtime_permission_denied_title">Izin untuk merekam suara</string>
-  <string name="record_audio_runtime_permission_denied_desc">Tanpa izin akses, Collect tidak dapat mengakses mikrofon pada perangkat. Buka ulang aplikasi jika Anda sudah yakin untuk memberikan izin.</string>
+  <string name="record_audio_runtime_permission_denied_desc">Tanpa izin akses, Survey Record tidak dapat mengakses mikrofon pada perangkat. Buka ulang aplikasi jika Anda sudah yakin untuk memberikan izin.</string>
   <!--##############################################
     # FILL BLANK FORM
     ##############################################-->
@@ -495,7 +495,7 @@
   <string name="enable_gps">Aktifkan GPS</string>
   <string name="gps_enable_message">GPS dinonaktifkan pada perangkat Anda. Apakah Anda ingin mengaktifkannya?</string>
   <string name="geo_clear_warning">Fitur sudah dibuat. Apakah Anda ingin menghapus fitur ini?</string>
-  <string name="geo_exit_warning">Buang perubahan dan kembali ke ODK?</string>
+  <string name="geo_exit_warning">Buang perubahan dan kembali ke Survey Record?</string>
   <string name="polygon_validator">Setidaknya dibutuhkan 3 titik untuk membuat Polygon.</string>
   <string name="polyline_validator">Setidaknya dibutuhkan 2 titik untuk membuat Poyline.</string>
   <string name="clear">Hapus</string>
@@ -590,7 +590,7 @@
   <string name="form_updates_available">Tersedia pembaruan formulir</string>
   <string name="newer_version_of_a_form_info">Ini adalah pembaruan dari formulir yang kamu miliki</string>
   <string name="form_update_error">Pembaruan formulir tidak berhasil</string>
-  <string name="form_update_error_massage">Buka ODK Collect untuk mencoba lagi</string>
+  <string name="form_update_error_massage">Buka Survey Record untuk mencoba lagi</string>
   <!--Text for notification shown while syncing forms with the server-->
   <string name="form_update_notification_title">Sinkronisasi formulir</string>
   <string name="load_remote_form_error">Unduhan daftar formulir tidak berhasil</string>
@@ -605,9 +605,9 @@
     ##############################################-->
   <string name="report_to_project_lead">Jika anda terus mengalami masalah ini, laporkan ke orang yang meminta anda untuk mengumpulkan data.</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="unreachable_error">ODK Collect tidak dapat menghubung server di %s. Apakah anda sudah memasukkan URL dengan benar?</string>
+  <string name="unreachable_error">Survey Record tidak dapat menghubung server di %s. Apakah anda sudah memasukkan URL dengan benar?</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="security_error">ODK Collect tidak dapat menghubung server di %s. Apakah anda sudah memasukkan URL dengan benar?</string>
+  <string name="security_error">Survey Record tidak dapat menghubung server di %s. Apakah anda sudah memasukkan URL dengan benar?</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
   <string name="server_error">Peladen %1$s rmengembalikan kode status %2$s.</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
@@ -841,8 +841,8 @@
      # ABOUT
      ##############################################-->
   <string name="about_preferences">Tentang</string>
-  <string name="tell_your_friends">Bagikan ODK Collect</string>
-  <string name="tell_your_friends_msg">Apakah rekan Anda masih menggunakan kertas untuk pengumpulan data? Kabari mereka untuk menggunakan ODK Collect.</string>
+  <string name="tell_your_friends">Bagikan Survey Record</string>
+  <string name="tell_your_friends_msg">Apakah rekan Anda masih menggunakan kertas untuk pengumpulan data? Kabari mereka untuk menggunakan Survey Record.</string>
   <string name="leave_a_review">Berikan ulasan di Play Store</string>
   <string name="leave_a_review_msg">Ulasan Anda (semoga positif) dapat mempromosikan aplikasi ODK di Play Store.</string>
   <string name="odk_website">Kunjungi situs ODK </string>
@@ -894,7 +894,7 @@
   <string name="fs_delete_media_path_if_file_error">Tidak dapat menghapus \'%s\'. Mohon hapus berkas secara manual dan unduh ulang formulirnya.</string>
   <string name="fs_create_media_folder_error">Tidak dapat membuat folder media \'%s\'.</string>
   <string name="fs_file_copy_error">Tidak dapat menyalin \'%1$s\' terhadap \'%2$s\'. Penyebab: %3$s</string>
-  <string name="select_odk_shortcut">Pilih pintasan ODK</string>
+  <string name="select_odk_shortcut">Pilih pintasan Survey Record</string>
   <string name="background_audio_help">Formulir ini merekam suara dari perangkat mikrofon Anda. Anda dapat menggunakan indikator volume untuk memastikan bahwa mikrofon sudah cukup dekat dengan suara yang ingin Anda rekam. Untuk menghentikan perekaman mohon keluar dari formulir ini. Untuk informasi lebih lanjut mohon hubungi orang yang meminta anda untuk mengumpulkan data.</string>
   <string name="loading">Memuat…</string>
   <!--##############################################
@@ -969,9 +969,9 @@
     # Form opening errors
     ##############################################-->
   <!--Error shown when a user tries to open a form that's in a different project-->
-  <string name="wrong_project_selected_for_form">Untuk membuka formulir ini, Anda harus membuka ODK Collect dan beralih ke proyek yang memuatnya.</string>
+  <string name="wrong_project_selected_for_form">Untuk membuka formulir ini, Anda harus membuka Survey Record dan beralih ke proyek yang memuatnya.</string>
   <!--Error shown when a user tries to open a form when there are no projects-->
-  <string name="app_not_configured">ODK Collect belum dikonfigurasi. Cobalah membuka ODK Collect dan mengatur konfigurasinya.\n\nJika anda mengetuk pintasan, anda mungkin perlu membuatnya kembali setelah mengkonfigurasi ODK Collect.</string>
+  <string name="app_not_configured">Survey Record belum dikonfigurasi. Cobalah membuka Survey Record dan mengatur konfigurasinya.\n\nJika anda mengetuk pintasan, anda mungkin perlu membuatnya kembali setelah mengkonfigurasi Survey Record.</string>
   <!--Displayed when form filling is attempted to be launched by intent but the intent URI mime type is unknown-->
   <string name="unrecognized_uri">URI tidak dikenal: %s</string>
   <!--Displayed when form filling is attempted to be launched by intent but the intent URI is incorrect-->
@@ -1014,7 +1014,7 @@
   <string name="dev_tools">Alat pengembang</string>
   <!--Option provided in the Developer tools settings to force an application crash-->
   <string name="crash_app">Paksa aplikasi untuk crash</string>
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <string name="crash_app_summary">Memaksa terjadinya pengecualian yang tidak ditangani sehingga aplikasi berhenti secara tiba-tiba</string>
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <string name="debug_filters">Filter debug</string>
@@ -1022,7 +1022,7 @@
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <string name="use_zxing_for_barcode_scanning">Kembali ke pemindai kode batang versi lama</string>
   <string name="permission_dialog_title">Tentang izin</string>
-  <string name="permission_dialog_text">Anda akan diminta untuk mengizinkan ODK Collect mengakses fitur-fitur di bawah ini, pilih “izinkan” jika anda ingin menggunakannya.</string>
+  <string name="permission_dialog_text">Anda akan diminta untuk mengizinkan Survey Record mengakses fitur-fitur di bawah ini, pilih “izinkan” jika anda ingin menggunakannya.</string>
   <string name="notifications">Notifikasi</string>
   <string name="required_for_notifications">Diperlukan untuk menampilkan pembaruan saat formulir diunduh, diperbarui, dan dikirimkan.</string>
   <!--##############################################

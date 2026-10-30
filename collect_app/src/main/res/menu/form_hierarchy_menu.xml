@@ -4,6 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/menu_share_pdf"
+        android:icon="@drawable/ic_outline_share_24"
+        android:title="@string/share_pdf_report"
+        android:contentDescription="@string/share_pdf_report"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/menu_edit"
         android:icon="@drawable/ic_edit_24"
         android:title="@string/edit_finalized_form"

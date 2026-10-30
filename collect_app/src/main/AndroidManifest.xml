@@ -80,7 +80,8 @@ the specific language governing permissions and limitations under the License.
     <application
         android:name=".application.Collect"
         android:allowBackup="false"
-        android:icon="@drawable/notes"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:installLocation="auto"
         android:label="@string/collect_app_name"
         android:largeHeap="true"
@@ -227,11 +228,11 @@ the specific language governing permissions and limitations under the License.
 
         <provider
             android:name=".external.FormsProvider"
-            android:authorities="org.odk.collect.android.provider.odk.forms"
+            android:authorities="${applicationId}.provider.forms"
             android:exported="true" />
         <provider
             android:name=".external.InstanceProvider"
-            android:authorities="org.odk.collect.android.provider.odk.instances"
+            android:authorities="${applicationId}.provider.instances"
             android:exported="true" />
 
         <activity-alias
@@ -278,7 +279,7 @@ the specific language governing permissions and limitations under the License.
             android:targetActivity=".activities.FormDownloadListActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="org.odk.collect.android.FORM_DOWNLOAD" />
+                <action android:name="${applicationId}.FORM_DOWNLOAD" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="vnd.android.cursor.dir/vnd.odk.form" />
             </intent-filter>
@@ -301,7 +302,7 @@ the specific language governing permissions and limitations under the License.
             android:targetActivity=".instancemanagement.send.InstanceUploaderActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="org.odk.collect.android.INSTANCE_UPLOAD" />
+                <action android:name="${applicationId}.INSTANCE_UPLOAD" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="vnd.android.cursor.dir/vnd.odk.instance" />
             </intent-filter>
@@ -310,7 +311,7 @@ the specific language governing permissions and limitations under the License.
         <!-- Enable Shortcuts for Command Actions -->
         <activity
             android:name=".external.AndroidShortcutsActivity"
-            android:label="ODK Form"
+            android:label="@string/collect_app_name"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             android:exported="true">
             <intent-filter>

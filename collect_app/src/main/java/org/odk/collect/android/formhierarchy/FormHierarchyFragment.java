@@ -62,6 +62,7 @@ import org.odk.collect.async.Scheduler;
 import org.odk.collect.forms.instances.Instance;
 import org.odk.collect.material.MaterialProgressDialogFragment;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -135,6 +136,14 @@ public class FormHierarchyFragment extends Fragment {
                         instancesDataService,
                         currentProjectId
                 );
+            }
+
+            @Override
+            public void onSharePdfClicked() {
+                File instanceFile = formEntryViewModel.getFormController().getInstanceFile();
+                if (instanceFile != null) {
+                    org.odk.collect.android.pdf.PdfReportSharer.INSTANCE.share(requireActivity(), instanceFile);
+                }
             }
 
             @Override
@@ -873,6 +882,9 @@ public class FormHierarchyFragment extends Fragment {
                     ? isGroupSizeLocked(formHierarchyViewModel.getRepeatGroupPickerIndex()) : isGroupSizeLocked(screenIndex);
 
             menu.findItem(R.id.menu_edit).setVisible(viewOnly && formEntryViewModel.isFormEditableAfterFinalization());
+            File instanceFile = formEntryViewModel.getFormController().getInstanceFile();
+            boolean hasPdf = instanceFile != null && org.odk.collect.android.pdf.PdfReportFiles.INSTANCE.reportFile(instanceFile).isFile();
+            menu.findItem(R.id.menu_share_pdf).setVisible(hasPdf);
             menu.findItem(R.id.menu_add_repeat).setVisible(shouldShowPicker && !isGroupSizeLocked && !viewOnly);
             menu.findItem(R.id.menu_delete_child).setVisible(isInRepeat && !shouldShowPicker && !isGroupSizeLocked && !viewOnly);
             menu.findItem(R.id.menu_go_up).setVisible(!isAtBeginning);
@@ -886,6 +898,9 @@ public class FormHierarchyFragment extends Fragment {
 
             if (menuItem.getItemId() == R.id.menu_edit) {
                 onClickListener.onEditClicked();
+                return true;
+            } else if (menuItem.getItemId() == R.id.menu_share_pdf) {
+                onClickListener.onSharePdfClicked();
                 return true;
             } else if (menuItem.getItemId() == R.id.menu_delete_child) {
                 onClickListener.onDeleteRepeatClicked();
@@ -909,6 +924,8 @@ public class FormHierarchyFragment extends Fragment {
 
         interface OnClickListener {
             void onEditClicked();
+
+            void onSharePdfClicked();
 
             void onGoUpClicked();
 

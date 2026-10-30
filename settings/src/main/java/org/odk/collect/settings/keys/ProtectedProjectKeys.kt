@@ -29,6 +29,7 @@ object ProtectedProjectKeys {
     const val KEY_GUIDANCE_HINT = "guidance_hint"
     const val KEY_EXTERNAL_APP_RECORDING = "external_app_recording"
     const val KEY_INSTANCE_FORM_SYNC = "instance_form_sync"
+    const val KEY_GENERATE_PDF_ON_FINALIZE = "generate_pdf_on_finalize"
     const val KEY_CHANGE_FORM_METADATA = "change_form_metadata"
     const val KEY_ANALYTICS = "analytics"
 
@@ -69,6 +70,7 @@ object ProtectedProjectKeys {
         KEY_GUIDANCE_HINT,
         KEY_EXTERNAL_APP_RECORDING,
         KEY_INSTANCE_FORM_SYNC,
+        KEY_GENERATE_PDF_ON_FINALIZE,
         KEY_CHANGE_FORM_METADATA,
         KEY_ANALYTICS,
         KEY_MOVING_BACKWARDS,

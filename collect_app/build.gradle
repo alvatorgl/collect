@@ -55,7 +55,7 @@ android {
     }
 
     defaultConfig {
-        applicationId('org.odk.collect.android')
+        applicationId('co.glocation.surveyrecord')
         minSdk libs.versions.minSdk.get().toInteger()
         targetSdkVersion libs.versions.targetSdk.get().toInteger()
         versionCode project.hasProperty('versionCode') ? project.getProperties()['versionCode'].toInteger() : 5112
@@ -65,7 +65,7 @@ android {
     }
 
     base {
-        archivesName = "ODK-Collect"
+        archivesName = "Survey-Record"
     }
 
     signingConfigs {

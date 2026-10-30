@@ -47,14 +47,14 @@
   <string name="search">Etsi</string>
   <string name="not_granted_permission">Toiminto, jota yrität käynnistää, vaatii käyttöluvan jota ei ole myönnetty.</string>
   <string name="storage_runtime_permission_denied_title">Talletusluvat</string>
-  <string name="storage_runtime_permission_denied_desc">Ilman näitä lupia Collect ei pysty lukemaan lomakemäärittelyitä tai tallentamaan vastauksia. Avaa sovellus uudestaan kun olet valmis antamaan luvat.</string>
+  <string name="storage_runtime_permission_denied_desc">Ilman näitä lupia Survey Record ei pysty lukemaan lomakemäärittelyitä tai tallentamaan vastauksia. Avaa sovellus uudestaan kun olet valmis antamaan luvat.</string>
   <string name="location_runtime_permissions_denied_title">Sijaintitiedon käyttöluvat</string>
-  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted.-->
-  <string name="location_runtime_permissions_denied_desc">Ilman lupaa <b>Tarkka sijainti</b> Collect ei pysty tallentamaan sijaintiasi. Yritä uudestaan kun olet valmis sallimaan sen.</string>
+  <!--Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. Survey Record only captures location if the precise location permission is granted.-->
+  <string name="location_runtime_permissions_denied_desc">Ilman lupaa <b>Tarkka sijainti</b> Survey Record ei pysty tallentamaan sijaintiasi. Yritä uudestaan kun olet valmis sallimaan sen.</string>
   <string name="camera_runtime_permission_denied_title">Kameran käyttölupa</string>
-  <string name="camera_runtime_permission_denied_desc">Ilman tätä käyttölupaa Collect ei pysty käyttämään kameraa. Ole hyvä ja yritä uudestaa kun olet valmis myöntämään sen.</string>
+  <string name="camera_runtime_permission_denied_desc">Ilman tätä käyttölupaa Survey Record ei pysty käyttämään kameraa. Ole hyvä ja yritä uudestaa kun olet valmis myöntämään sen.</string>
   <string name="record_audio_runtime_permission_denied_title">Äänen tallentamisen käyttölupa</string>
-  <string name="record_audio_runtime_permission_denied_desc">Ilman tätä käyttölupaa Collect ei pysty käyttämään mikrofonia. Ole hyvä ja yritä uudestaa kun olet valmis myöntämään sen.</string>
+  <string name="record_audio_runtime_permission_denied_desc">Ilman tätä käyttölupaa Survey Record ei pysty käyttämään mikrofonia. Ole hyvä ja yritä uudestaa kun olet valmis myöntämään sen.</string>
   <!--##############################################
     # FILL BLANK FORM
     ##############################################-->
@@ -508,7 +508,7 @@
   <string name="enable_gps">Ota GPS käyttöön</string>
   <string name="gps_enable_message">GPS ei ole päällä laitteessasi. Haluaisitko kytkeä sen päälle?</string>
   <string name="geo_clear_warning">Ominaisuus on jo luotu. Haluatko tyhjentää ominaisuuden?</string>
-  <string name="geo_exit_warning">Hylätäänkö muutokset ja palataan ODK:hon?</string>
+  <string name="geo_exit_warning">Hylätäänkö muutokset ja palataan Survey Record:hon?</string>
   <string name="polygon_validator">Monikulmion luomiseen tarvitaan vähintään 3 pistettä</string>
   <string name="polyline_validator">Polyline-kuvion luomiseen tarvitaan vähintään 2 pistettä</string>
   <string name="clear">Tyhjennä</string>
@@ -616,7 +616,7 @@
   <string name="form_updates_available">Lomakepäivityksiä saatavilla</string>
   <string name="newer_version_of_a_form_info">Tämä on päivitys lomakkeeseen, joka sinulla on</string>
   <string name="form_update_error">Lomakkeen päivitys epäonnistui</string>
-  <string name="form_update_error_massage">Avaa ODK Collect yrittääksesi uudestaan</string>
+  <string name="form_update_error_massage">Avaa Survey Record yrittääksesi uudestaan</string>
   <!--Text for notification shown while syncing forms with the server-->
   <string name="form_update_notification_title">Lomakkeita synkronoidaan</string>
   <string name="load_remote_form_error">Lomakeluettelon lataaminen epäonnistui</string>
@@ -631,9 +631,9 @@
     ##############################################-->
   <string name="report_to_project_lead">Jos ongelma jatkuu, ilmoita siitä tiedonkeruusta vastaavalle.</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="unreachable_error">Collect ei tavoita palvelinta osoitteessa %s. Syötitkö URL:in oikein?</string>
+  <string name="unreachable_error">Survey Record ei tavoita palvelinta osoitteessa %s. Syötitkö URL:in oikein?</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <string name="security_error">Collect ei saa turvattua yhteyttä palvelimeen %s. Syötitkö URL:in oikein?</string>
+  <string name="security_error">Survey Record ei saa turvattua yhteyttä palvelimeen %s. Syötitkö URL:in oikein?</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
   <string name="server_error">Palvelin %1$s vastasi statuskoodilla %2$s.</string>
   <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
@@ -867,8 +867,8 @@
      # ABOUT
      ##############################################-->
   <string name="about_preferences">Lisätietoja</string>
-  <string name="tell_your_friends">Jaa ODK Collect</string>
-  <string name="tell_your_friends_msg">Keräävätkö kollegasi vielä dataa paperilla? Jaa ODK Collect heidän kanssaan.</string>
+  <string name="tell_your_friends">Jaa Survey Record</string>
+  <string name="tell_your_friends_msg">Keräävätkö kollegasi vielä dataa paperilla? Jaa Survey Record heidän kanssaan.</string>
   <string name="leave_a_review">Kirjoita Play Store -arvio</string>
   <string name="leave_a_review_msg">Sinun (toivottavasti myönteinen) arviosi lisää sovelluksen näkyvyyttä Play Store -kaupassa.</string>
   <string name="odk_website">Käy ODK:n verkkosivulla</string>
@@ -920,7 +920,7 @@
   <string name="fs_delete_media_path_if_file_error">\'%s\' ei voitu poistaa. Poista tiedosto manuaalisesti ja hae lomake uudelleen.</string>
   <string name="fs_create_media_folder_error">Ei voitu luoda mediakansiota \'%s\'.</string>
   <string name="fs_file_copy_error">Ei voitu kopioida \'%1$s\' yli \'%2$s\'. Syy: %3$s</string>
-  <string name="select_odk_shortcut">Valitse ODK-oikotie</string>
+  <string name="select_odk_shortcut">Valitse Survey Record-oikotie</string>
   <string name="background_audio_help">Tämä lomake tallentaa ääntä laitteesi mikrofonin avulla.\n\nVoit käyttää äänitason ilmaisinta varmistaaksesi, että mikrofoni on riittävän lähellä ääntä, jota haluat äänittää.\n\nSulje tämä lomake lopettaaksesi äänityksen.\n\nOle yhteydessä henkilöön joka pyysi sinua keräämään tietoja saadaksesi lisätietoja.</string>
   <string name="loading">Ladataan…</string>
   <!--##############################################
@@ -995,9 +995,9 @@
     # Form opening errors
     ##############################################-->
   <!--Error shown when a user tries to open a form that's in a different project-->
-  <string name="wrong_project_selected_for_form">Avataksesi tämän lomakkeen, avaa ensin ODK Collect ja vaihda projektiin johon se sisältyy.</string>
+  <string name="wrong_project_selected_for_form">Avataksesi tämän lomakkeen, avaa ensin Survey Record ja vaihda projektiin johon se sisältyy.</string>
   <!--Error shown when a user tries to open a form when there are no projects-->
-  <string name="app_not_configured">ODK Collect ei ole konfiguroitu. Yritä avata ODK Collect ja konfiguroida sitä.\n\nJos käytit pikakuvaketta, saatat joutua luomaan sen uudelleen kun ODK Collect on konfiguroitu.</string>
+  <string name="app_not_configured">Survey Record ei ole konfiguroitu. Yritä avata Survey Record ja konfiguroida sitä.\n\nJos käytit pikakuvaketta, saatat joutua luomaan sen uudelleen kun Survey Record on konfiguroitu.</string>
   <!--Displayed when form filling is attempted to be launched by intent but the intent URI mime type is unknown-->
   <string name="unrecognized_uri">Tunnistamaton URI: %s</string>
   <!--Displayed when form filling is attempted to be launched by intent but the intent URI is incorrect-->
@@ -1021,7 +1021,7 @@
   <!--Label for entity that has been created offline and is not on the server yet-->
   <string name="offline">Offline</string>
   <!--Error message displayed when a user opens a form with an unrecognized entity version-->
-  <string name="unrecognized_entity_version">Tätä lomaketta ei tueta tässä ODK Collect -versiossa. Ole hyvä ja päivitä Collect. Jos ongelma jatkuu, ilmoita siitä henkilölle, joka pyysi sinua keräämään dataa.\n\nForm Entities spec versio: %s</string>
+  <string name="unrecognized_entity_version">Tätä lomaketta ei tueta tässä Survey Record -versiossa. Ole hyvä ja päivitä Survey Record. Jos ongelma jatkuu, ilmoita siitä henkilölle, joka pyysi sinua keräämään dataa.\n\nForm Entities spec versio: %s</string>
   <!--##############################################
     # Crash handling
     ##############################################-->
@@ -1041,7 +1041,7 @@
   <string name="dev_tools">Kehitystyökalut</string>
   <!--Option provided in the Developer tools settings to force an application crash-->
   <string name="crash_app">Kaada sovellus</string>
-  <!--An uncaught exception is an exception that is not handled by ODK Collect and so will force the application to close-->
+  <!--An uncaught exception is an exception that is not handled by Survey Record and so will force the application to close-->
   <string name="crash_app_summary">Pakota havaitsematon poikkeus, joka aiheuttaa sovelluksen kaatumisen</string>
   <!--Option provided in the Developer tools settings to allow debugging filters during form entry-->
   <string name="debug_filters">Vianetsinnän suodattimet</string>
@@ -1049,7 +1049,7 @@
   <!--Option provided in the Experimental settings to revert to the old ZXing based barcode scanner-->
   <string name="use_zxing_for_barcode_scanning">Paluu vanhempaan viivakoodilukijaan</string>
   <string name="permission_dialog_title">Tietoa luvista</string>
-  <string name="permission_dialog_text">Sinulta tullaan pyytämään lupaa ODK Collectille pääsy toimintoihin alla, valitse \"Salli\" jos haluat käyttää niitä.</string>
+  <string name="permission_dialog_text">Sinulta tullaan pyytämään lupaa Survey Recordille pääsy toimintoihin alla, valitse \"Salli\" jos haluat käyttää niitä.</string>
   <string name="notifications">Ilmoitukset</string>
   <string name="required_for_notifications">Tarvitaan päivitysten näyttämiseen kun lomakkeita ladataan, päivitetään tai lähetetään.</string>
   <!--##############################################
@@ -1149,7 +1149,7 @@
   <!--Title displayed in a dialog before starting a form if there is a work to recover-->
   <string name="savepoint_recovery_dialog_title">Haluatko palauttaa työsi?</string>
   <!--Message displayed in a dialog before starting a form if there is a work to recover. Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html-->
-  <string name="savepoint_recovery_dialog_message">\'Collect sulkeutui odottamattomasti\' EEE dd.MM.yyyy \'kello\' HH:mm\' ja tallensi työsi.\n\nHaluatko palauttaa työsi?\'</string>
+  <string name="savepoint_recovery_dialog_message">\'Survey Record sulkeutui odottamattomasti\' EEE dd.MM.yyyy \'kello\' HH:mm\' ja tallensi työsi.\n\nHaluatko palauttaa työsi?\'</string>
   <!--Text for the button that accepts the recovery of the work-->
   <string name="recover">Palauta</string>
   <!--Text for the button that declines the recovery of the work-->
