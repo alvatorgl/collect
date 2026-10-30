@@ -14,6 +14,7 @@ import org.odk.collect.android.instancemanagement.isEdit
 import org.odk.collect.android.javarosawrapper.FailedValidationResult
 import org.odk.collect.android.javarosawrapper.FormController
 import org.odk.collect.android.javarosawrapper.JavaRosaFormController
+import org.odk.collect.android.pdf.PdfReportGenerator
 import org.odk.collect.android.utilities.FileUtils
 import org.odk.collect.android.utilities.FormUtils
 import org.odk.collect.entities.LocalEntityUseCases
@@ -187,6 +188,7 @@ object FormEntryUseCases {
 
     @JvmStatic
     private fun saveFinalizedInstanceToDisk(formController: FormController) {
+        PdfReportGenerator.generate(formController, true)
         val payload = formController.getSubmissionXml()
         FileUtils.write(formController.getInstanceFile(), payload!!.payloadBytes)
     }

@@ -44,6 +44,12 @@
         app:allowDividerAbove="false"
         app:allowDividerBelow="false"
         app:iconSpaceReserved="false">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="generate_pdf_on_finalize"
+            android:summary="@string/generate_pdf_on_finalize_summary"
+            android:title="@string/generate_pdf_on_finalize"
+            app:iconSpaceReserved="false" />
         <ListPreference
             android:dialogTitle="@string/autosend_selector_title"
             android:entries="@array/autosend_selector_entries"

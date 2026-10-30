@@ -848,6 +848,11 @@
     <string name="maps_settings_subtext">Basemap, styles, layers</string>
     <!-- Title of a settings section -->
     <string name="form_management_preferences">Form management</string>
+    <!-- Form management setting. When on, finalizing a form writes a PDF summary next to the instance. -->
+    <string name="generate_pdf_on_finalize">Generate PDF when finalizing</string>
+    <string name="generate_pdf_on_finalize_summary">Save a PDF summary in the form folder. To also send it to the server, add an optional question named pdf_report.</string>
+    <string name="share_pdf_report">Share PDF</string>
+    <string name="pdf_report_missing">There is no PDF for this record.</string>
     <!-- Subtext of a settings section -->
     <string name="form_management_settings_subtext">Auto-update, auto-send, auto-delete</string>
     <!-- Title of a settings section -->

@@ -673,6 +673,10 @@
   <string name="maps_settings_subtext">Mapa base, estilo, capas</string>
   <!--Title of a settings section-->
   <string name="form_management_preferences">Manejo de formularios</string>
+  <string name="generate_pdf_on_finalize">Generar PDF al finalizar</string>
+  <string name="generate_pdf_on_finalize_summary">Guarda un resumen en PDF en la carpeta del formulario. Para enviarlo al servidor, agregue una pregunta opcional llamada pdf_report.</string>
+  <string name="share_pdf_report">Compartir PDF</string>
+  <string name="pdf_report_missing">No hay un PDF para este registro.</string>
   <!--Subtext of a settings section-->
   <string name="form_management_settings_subtext">Actualización automática, autoenvío, autoborrado</string>
   <!--Title of a settings section-->

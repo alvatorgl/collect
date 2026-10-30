@@ -206,6 +206,7 @@ class FormManagementPreferencesFragmentTest {
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GUIDANCE_HINT)!!.isVisible, `is`(true))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_EXTERNAL_APP_RECORDING)!!.isVisible, `is`(true))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_INSTANCE_SYNC)!!.isVisible, `is`(true))
+            assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE)!!.isVisible, `is`(true))
         }
     }
 
@@ -223,6 +224,7 @@ class FormManagementPreferencesFragmentTest {
         adminSettings.save(ProtectedProjectKeys.KEY_GUIDANCE_HINT, false)
         adminSettings.save(ProtectedProjectKeys.KEY_EXTERNAL_APP_RECORDING, false)
         adminSettings.save(ProtectedProjectKeys.KEY_INSTANCE_FORM_SYNC, false)
+        adminSettings.save(ProtectedProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE, false)
 
         projectPreferencesViewModel.setStateLocked()
 
@@ -240,6 +242,7 @@ class FormManagementPreferencesFragmentTest {
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GUIDANCE_HINT)!!.isVisible, `is`(false))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_EXTERNAL_APP_RECORDING)!!.isVisible, `is`(false))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_INSTANCE_SYNC)!!.isVisible, `is`(false))
+            assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE)!!.isVisible, `is`(false))
         }
     }
 
@@ -261,6 +264,7 @@ class FormManagementPreferencesFragmentTest {
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GUIDANCE_HINT)!!.isVisible, `is`(true))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_EXTERNAL_APP_RECORDING)!!.isVisible, `is`(true))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_INSTANCE_SYNC)!!.isVisible, `is`(true))
+            assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE)!!.isVisible, `is`(true))
         }
     }
 
@@ -278,6 +282,7 @@ class FormManagementPreferencesFragmentTest {
         adminSettings.save(ProtectedProjectKeys.KEY_GUIDANCE_HINT, false)
         adminSettings.save(ProtectedProjectKeys.KEY_EXTERNAL_APP_RECORDING, false)
         adminSettings.save(ProtectedProjectKeys.KEY_INSTANCE_FORM_SYNC, false)
+        adminSettings.save(ProtectedProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE, false)
 
         projectPreferencesViewModel.setStateUnlocked()
 
@@ -295,6 +300,7 @@ class FormManagementPreferencesFragmentTest {
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GUIDANCE_HINT)!!.isVisible, `is`(true))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_EXTERNAL_APP_RECORDING)!!.isVisible, `is`(true))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_INSTANCE_SYNC)!!.isVisible, `is`(true))
+            assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE)!!.isVisible, `is`(true))
         }
     }
 
@@ -316,6 +322,7 @@ class FormManagementPreferencesFragmentTest {
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GUIDANCE_HINT)!!.isVisible, `is`(true))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_EXTERNAL_APP_RECORDING)!!.isVisible, `is`(true))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_INSTANCE_SYNC)!!.isVisible, `is`(true))
+            assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE)!!.isVisible, `is`(true))
         }
     }
 
@@ -333,6 +340,7 @@ class FormManagementPreferencesFragmentTest {
         adminSettings.save(ProtectedProjectKeys.KEY_GUIDANCE_HINT, false)
         adminSettings.save(ProtectedProjectKeys.KEY_EXTERNAL_APP_RECORDING, false)
         adminSettings.save(ProtectedProjectKeys.KEY_INSTANCE_FORM_SYNC, false)
+        adminSettings.save(ProtectedProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE, false)
 
         projectPreferencesViewModel.setStateNotProtected()
 
@@ -350,6 +358,7 @@ class FormManagementPreferencesFragmentTest {
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GUIDANCE_HINT)!!.isVisible, `is`(false))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_EXTERNAL_APP_RECORDING)!!.isVisible, `is`(false))
             assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_INSTANCE_SYNC)!!.isVisible, `is`(false))
+            assertThat(fragment.findPreference<Preference>(ProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE)!!.isVisible, `is`(false))
         }
     }
 
@@ -383,6 +392,7 @@ class FormManagementPreferencesFragmentTest {
     fun `When all preferences in 'Form submission' category are hidden, the category should be hidden as well`() {
         adminSettings.save(ProtectedProjectKeys.KEY_AUTOSEND, false)
         adminSettings.save(ProtectedProjectKeys.KEY_DELETE_AFTER_SEND, false)
+        adminSettings.save(ProtectedProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE, false)
 
         val scenario = launcherRule.launch(FormManagementPreferencesFragment::class.java)
         scenario.onFragment { fragment: FormManagementPreferencesFragment ->
@@ -432,6 +442,7 @@ class FormManagementPreferencesFragmentTest {
     @Test
     fun `When all preferences in 'Form import' category are hidden, the category should be hidden as well`() {
         adminSettings.save(ProtectedProjectKeys.KEY_INSTANCE_FORM_SYNC, false)
+        adminSettings.save(ProtectedProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE, false)
 
         val scenario = launcherRule.launch(FormManagementPreferencesFragment::class.java)
         scenario.onFragment { fragment: FormManagementPreferencesFragment ->

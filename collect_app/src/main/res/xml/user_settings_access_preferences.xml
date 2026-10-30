@@ -79,6 +79,10 @@
             android:title="@string/instance_sync"
             app:iconSpaceReserved="false" />
         <CheckBoxPreference
+            android:key="generate_pdf_on_finalize"
+            android:title="@string/generate_pdf_on_finalize"
+            app:iconSpaceReserved="false" />
+        <CheckBoxPreference
             android:key="change_form_metadata"
             android:title="@string/form_metadata"
             app:iconSpaceReserved="false" />

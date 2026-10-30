@@ -24,6 +24,7 @@ object Defaults {
             hashMap[ProjectKeys.KEY_HIGH_RESOLUTION] = true
             hashMap[ProjectKeys.KEY_IMAGE_SIZE] = "original_image_size"
             hashMap[ProjectKeys.KEY_INSTANCE_SYNC] = true
+            hashMap[ProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE] = true
             hashMap[ProjectKeys.KEY_PERIODIC_FORM_UPDATES_CHECK] = "every_fifteen_minutes"
             hashMap[ProjectKeys.KEY_AUTOMATIC_UPDATE] = false
             hashMap[ProjectKeys.KEY_HIDE_OLD_FORM_VERSIONS] = true

@@ -51,6 +51,8 @@ import org.odk.collect.android.javarosawrapper.FormController;
 import org.odk.collect.android.javarosawrapper.ValidationResult;
 import org.odk.collect.android.storage.StoragePathProvider;
 import org.odk.collect.android.storage.StorageSubdirectory;
+import org.odk.collect.android.pdf.PdfReportFiles;
+import org.odk.collect.android.pdf.PdfReportGenerator;
 import org.odk.collect.android.utilities.ContentUriHelper;
 import org.odk.collect.android.utilities.EncryptionUtils;
 import org.odk.collect.android.utilities.EncryptionUtils.EncryptedFormInformation;
@@ -368,6 +370,21 @@ public class SaveFormToDisk {
             File instanceXml = formController.getInstanceFile();
             File submissionXml = new File(instanceXml.getParentFile(), "submission.xml");
 
+            // Generate the PDF before the submission XML is serialized so an optional
+            // pdf_report answer can be included. Encrypted forms are handled after
+            // plaintext media is removed, otherwise the report would be encrypted and deleted.
+            EncryptedFormInformation formInfo = EncryptionUtils.getEncryptedFormInformation(uri, formController.getSubmissionMetadata());
+            File stagedReport = null;
+            if (formInfo == null) {
+                PdfReportGenerator.generate(formController, true, null);
+            } else {
+                // Keep the report out of the instance directory until plaintext media is deleted,
+                // so encryption does not wrap it into the submission.
+                File cacheDir = new File(new StoragePathProvider().getOdkDirPath(StorageSubdirectory.CACHE));
+                stagedReport = new File(cacheDir, instanceXml.getName() + ".survey-record.pdf");
+                PdfReportGenerator.generate(formController, false, stagedReport);
+            }
+
             payload = formController.getSubmissionXml();
 
             // write out submission.xml -- the data to actually submit to aggregate
@@ -378,7 +395,6 @@ public class SaveFormToDisk {
             writeFile(payload, submissionXml);
 
             // see if the form is encrypted and we can encrypt it...
-            EncryptedFormInformation formInfo = EncryptionUtils.getEncryptedFormInformation(uri, formController.getSubmissionMetadata());
             if (formInfo != null) {
                 // if we are encrypting, the form cannot be reopened afterward
                 canEditAfterCompleted = false;
@@ -427,6 +443,12 @@ public class SaveFormToDisk {
 
                 if (!EncryptionUtils.deletePlaintextFiles(instanceXml, new File(lastSavedPath))) {
                     Timber.e(new Error("Error deleting plaintext files for " + instanceXml.getAbsolutePath()));
+                }
+                if (stagedReport != null && stagedReport.exists()) {
+                    File finalReport = PdfReportFiles.reportFile(instanceXml);
+                    if (!stagedReport.renameTo(finalReport)) {
+                        Timber.e("Could not move Survey Record PDF into %s", finalReport.getAbsolutePath());
+                    }
                 }
             }
         }

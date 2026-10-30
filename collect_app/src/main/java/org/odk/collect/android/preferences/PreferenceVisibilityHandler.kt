@@ -64,7 +64,8 @@ class PreferenceVisibilityHandler(
                         ProtectedProjectKeys.KEY_IMAGE_SIZE,
                         ProtectedProjectKeys.KEY_GUIDANCE_HINT,
                         ProtectedProjectKeys.KEY_EXTERNAL_APP_RECORDING,
-                        ProtectedProjectKeys.KEY_INSTANCE_FORM_SYNC
+                        ProtectedProjectKeys.KEY_INSTANCE_FORM_SYNC,
+                        ProtectedProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE
                     )
                 )
                 "user_and_device_identity" -> preference.isVisible = state == ProjectPreferencesViewModel.State.UNLOCKED || hasAtLeastOnePreferenceEnabled(
@@ -89,6 +90,7 @@ class PreferenceVisibilityHandler(
                 ProjectKeys.KEY_GUIDANCE_HINT -> preference.isVisible = state == ProjectPreferencesViewModel.State.UNLOCKED || isOptionEnabled(ProtectedProjectKeys.KEY_GUIDANCE_HINT)
                 ProjectKeys.KEY_EXTERNAL_APP_RECORDING -> preference.isVisible = state == ProjectPreferencesViewModel.State.UNLOCKED || isOptionEnabled(ProtectedProjectKeys.KEY_EXTERNAL_APP_RECORDING)
                 ProjectKeys.KEY_INSTANCE_SYNC -> preference.isVisible = state == ProjectPreferencesViewModel.State.UNLOCKED || isOptionEnabled(ProtectedProjectKeys.KEY_INSTANCE_FORM_SYNC)
+                ProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE -> preference.isVisible = state == ProjectPreferencesViewModel.State.UNLOCKED || isOptionEnabled(ProtectedProjectKeys.KEY_GENERATE_PDF_ON_FINALIZE)
 
                 ProjectKeys.KEY_FORM_METADATA -> preference.isVisible = state == ProjectPreferencesViewModel.State.UNLOCKED || isOptionEnabled(ProtectedProjectKeys.KEY_CHANGE_FORM_METADATA)
                 ProjectKeys.KEY_ANALYTICS -> preference.isVisible = state == ProjectPreferencesViewModel.State.UNLOCKED || isOptionEnabled(ProtectedProjectKeys.KEY_ANALYTICS)
